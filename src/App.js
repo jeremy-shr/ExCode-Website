@@ -1,16 +1,16 @@
+import { Routes, Route } from "react-router-dom";
 import logo from "./logo.svg";
 import React from "react";
 import "./App.css";
 import About from "./components/About";
 import Home from "./components/Home";
-import { Switch, Route } from "react-router";
 
 function App() {
 	return (
 		<div className="App">
-			<Switch>
+			<Routes>
 				<Route path="/" component={Home} />
-			</Switch>
+			</Routes>
 			<About />
 		</div>
 	);
