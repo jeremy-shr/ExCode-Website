@@ -1,59 +1,52 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 import styled from "styled-components";
 
 const Title = styled.h1`
-	font-size: 30px;
-	text-align: center;
+	font-size: 53px;
 `;
 
-const Wrapper = styled.section`
-	position: absolute;
-	top: 120px;
-	right: 430px;
-	width: 500px;
-	padding: 4em;
-	border: 1px solid black;
-	border-radius: 5px;
+const R1 = styled.section`
+  background-image: url("/course.png");
+  height: 600px;
+  background-size:cover;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Paragraph = styled.p``;
 
-const WhatTitle = styled.h2`
-	top: 200px;
-	left: 200px;
-`;
-
-const SubWrapper = styled.section`
-	position: absolute;
-	width: 150px;
-	top: 750px;
-	left: 200px;
-	padding: 4em;
-	border: 1px solid black;
-	border-radius: 5px;
-`;
-
-const ForTitle = styled.h2`
-	position: absolute;
-	top: 750px;
-	right: 200px;
+const SubTitle = styled.h2`
+	
 `;
 
 function Home() {
 	return (
 		<>
-			<Wrapper>
-				<Title>The Leading Student Run Coding Bootcamp in the UK</Title>
+		<R1 className = "row-landing-sec1">
+		
+		   <div className="col-md-6">
+				
+				<Title>The Leading Student Run</Title>
+				<Title>Coding Bootcamp In The UK</Title> 
 				<Paragraph>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 					Facilis, esse cupiditate. Quas, praesentium asperiores? Ea,
 					voluptates provident dicta enim nostrum facilis commodi quas
 					illum officiis libero quod sequi nemo error.
 				</Paragraph>
-			</Wrapper>
+				
+			  </div>
+			 
+			</R1>
+			
 
-			<SubWrapper>
-				<WhatTitle>Why Apply?</WhatTitle>
+			{/* <SubWrapper> */}
+			<div className = "row-landing-sec2">
+			  <div className="col-md-8">
+				<SubTitle>What's ExCode?</SubTitle>
 				<Paragraph>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Consequuntur corrupti, ducimus, qui iste incidunt
@@ -61,8 +54,33 @@ function Home() {
 					dicta blanditiis officiis recusandae id assumenda! Unde,
 					dignissimos?
 				</Paragraph>
-			</SubWrapper>
-			<ForTitle>For Whom?</ForTitle>
+				  </div>
+				</div>
+			{/* </SubWrapper> */}
+			<div className = "row-landing-sec3">
+			  <div className="col-md-8">
+			<SubTitle>Why Apply?</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				</div>
+				</div>
+			<div className = "row-landing-sec4">
+			  <div className="col-md-8">
+			<SubTitle>For Whom?</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				</div>
+				</div>
 		</>
 	);
 }
