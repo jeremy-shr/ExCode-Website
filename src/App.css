@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Ubuntu&display=swap');
+
 .App {
   text-align: center;
+}
+
+html {
+  width: 100vw;
 }
 
 .App-logo {
@@ -35,4 +41,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.program-button {
+  color: #fff !important;
+  border-color: #fff !important;
+  border-radius: 50px !important;
+  margin-left: 250px;
 }

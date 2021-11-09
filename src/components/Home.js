@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import styled from "styled-components";
 
 const Title = styled.h1`
+	font-family: 'Raleway', sans-serif;
+	font-style: bold;
 	font-size: 53px;
 `;
 
@@ -16,10 +18,40 @@ const R1 = styled.section`
   justify-content: center;
 `;
 
-const Paragraph = styled.p``;
+const R2 = styled.section`
+	height: 950px;
+	display: flex !important;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+`;
+
+const R3 = styled.section`
+	height: 250px;
+	background-color: #468845;
+	display: flex !important;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+`;
+
+const Signup = styled.h2`
+	color: #fff;
+	font-family: 'Ubuntu';
+	font-size: 50px;
+	font-weight: bold;
+`;
+
+const Paragraph = styled.p`
+	font-size: 20px;
+	margin-bottom: 75px;
+	text-align: justify;
+`;
 
 const SubTitle = styled.h2`
-	
+	color: #62b22f;
+	font-size: 60px;
+	font-family: 'Ubuntu', sans-serif;
 `;
 
 function Home() {
@@ -43,10 +75,10 @@ function Home() {
 			</R1>
 			
 
-			{/* <SubWrapper> */}
-			<div className = "row-landing-sec2">
+		
+			<R2 className = "row-landing-sec2">
 			  <div className="col-md-8">
-				<SubTitle>What's ExCode?</SubTitle>
+				<SubTitle>What's ExCode:</SubTitle>
 				<Paragraph>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Consequuntur corrupti, ducimus, qui iste incidunt
@@ -54,12 +86,20 @@ function Home() {
 					dicta blanditiis officiis recusandae id assumenda! Unde,
 					dignissimos?
 				</Paragraph>
-				  </div>
-				</div>
-			{/* </SubWrapper> */}
-			<div className = "row-landing-sec3">
-			  <div className="col-md-8">
-			<SubTitle>Why Apply?</SubTitle>
+				 
+	
+			
+			<SubTitle>Why Apply:</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				
+		
+			<SubTitle>For Whom:</SubTitle>
 				<Paragraph>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Consequuntur corrupti, ducimus, qui iste incidunt
@@ -68,19 +108,16 @@ function Home() {
 					dignissimos?
 				</Paragraph>
 				</div>
-				</div>
-			<div className = "row-landing-sec4">
-			  <div className="col-md-8">
-			<SubTitle>For Whom?</SubTitle>
-				<Paragraph>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequuntur corrupti, ducimus, qui iste incidunt
-					perspiciatis saepe asperiores commodi magni beatae quis odit
-					dicta blanditiis officiis recusandae id assumenda! Unde,
-					dignissimos?
-				</Paragraph>
-				</div>
-				</div>
+				</R2>
+
+			<R3 className="row-landing-sec3">
+			<div className="col-md-6">
+				<Signup>Want to join the Bootcamp?</Signup>
+				<Button className="program-button" variant="outline-success" href="/program" size="lg">Program</Button>{' '}
+			</div>
+			
+
+			</R3>
 		</>
 	);
 }
