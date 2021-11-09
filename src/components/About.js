@@ -1,4 +1,6 @@
-function about() {
+import React from "react";
+
+function About() {
 	return (
 		<div>
 			<header>The ExCode Mission</header>
@@ -6,4 +8,4 @@ function about() {
 	);
 }
 
-export default about;
+export default About;
