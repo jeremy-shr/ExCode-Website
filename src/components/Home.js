@@ -22,9 +22,11 @@ const R1 = styled.section`
 const R2 = styled.section`
 	height: 950px;
 	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
 `;
 
 const R3 = styled.section`
@@ -43,6 +45,7 @@ const R4 = styled.section`
 	flex-wrap: wrap;
 	align-items: center;
 	height: 400px;
+	margin: 0 20px 0 20px;
 
 	.col-sm-3 {
 		flex: 0 0 auto;
@@ -50,10 +53,17 @@ const R4 = styled.section`
 	}
 `;
 
+const R5 = styled.section`
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 84px;
+`;
+
 const ImgName = styled.h3`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 220px;
+	padding-right: 218px;
 	margin-bottom: 0;
 	font-size: 20px;
 `;
@@ -61,7 +71,7 @@ const ImgName = styled.h3`
 const ImgSubName = styled.p`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 152px;
+	padding-right: 150px;
 	font-size: 19px;
 	color: grey;
 `;
@@ -73,6 +83,9 @@ const SubParagraph = styled.p`
 	text-align: justify;
 	color: #62b22f;
 `;
+
+const BracketLanding1 = styled.div`
+	display: flex;`
 
 const Signup = styled.h2`
 	color: #fff;
@@ -94,15 +107,30 @@ const SubTitle = styled.h2`
 `;
 
 const Bracket1 = styled.h1`
-	color: #62b22f;
-	font-size: 150px;
-	font-family: "Ubuntu", sans-serif;
+
+color: #62b22f;
+font-size: 170px;
+font-family: 'Ubuntu', sans-serif;
+position: absolute;
+left: 175px;
+
+div {
+	position: absolute;
+    bottom: -180px;
+}
+
 `;
 
 const Bracket2 = styled.h1`
-	color: #62b22f;
-	font-size: 150px;
-	font-family: "Ubuntu", sans-serif;
+
+color: #62b22f;
+font-size: 150px;
+font-family: 'Ubuntu', sans-serif;
+position: absolute;
+right: 175px;
+
+
+
 `;
 
 function Home() {
@@ -110,7 +138,7 @@ function Home() {
 		<>
 			<R1 className="row-landing-sec1">
 				<div className="col-md-6">
-					<Title>The Leading Student Run</Title>
+					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
 						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
@@ -118,45 +146,60 @@ function Home() {
 				</div>
 			</R1>
 
+
+
 			<R2 className="row-landing-sec2">
-				<div className="col-md-8">
-					<Bracket1>
-						<div dangerouslySetInnerHTML={{ __html: "{" }} />
-					</Bracket1>
-					<SubTitle>What's ExCode:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis
-						odit dicta blanditiis officiis recusandae id assumenda!
-						Unde, dignissimos?
-					</Paragraph>
+				<div style={{ paddingLeft: '250px', paddingRight: '250px' }}>
 
-					<SubTitle>Why Apply:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis
-						odit dicta blanditiis officiis recusandae id assumenda!
-						Unde, dignissimos?
-					</Paragraph>
+						<BracketLanding1>
+							<Bracket1><div
+								dangerouslySetInnerHTML={{ __html: "{" }}
+							/></Bracket1>
+							<div>
+								<SubTitle>What's ExCode:</SubTitle>
+								<div>
+									<Paragraph>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Consequuntur corrupti, ducimus, qui iste incidunt
+										perspiciatis saepe asperiores commodi magni beatae quis odit
+										dicta blanditiis officiis recusandae id assumenda! Unde,
+										dignissimos?
+									</Paragraph>
+								</div>
+							</div>
+						</BracketLanding1>
 
-					<SubTitle>For Whom:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis
-						odit dicta blanditiis officiis recusandae id assumenda!
-						Unde, dignissimos?
-					</Paragraph>
-					<Bracket2>
-						<div dangerouslySetInnerHTML={{ __html: "}" }} />
-					</Bracket2>
+
+
+						<SubTitle>Why Apply:</SubTitle>
+						<Paragraph>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Consequuntur corrupti, ducimus, qui iste incidunt
+							perspiciatis saepe asperiores commodi magni beatae quis odit
+							dicta blanditiis officiis recusandae id assumenda! Unde,
+							dignissimos?
+						</Paragraph>
+
+						<BracketLanding1>
+							<div>
+								<SubTitle>For Whom:</SubTitle>
+								<Paragraph>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequuntur corrupti, ducimus, qui iste incidunt
+									perspiciatis saepe asperiores commodi magni beatae quis odit
+									dicta blanditiis officiis recusandae id assumenda! Unde,
+									dignissimos?
+								</Paragraph>
+							</div>
+							<Bracket2><div
+								dangerouslySetInnerHTML={{ __html: "}" }}
+							/></Bracket2>
+						</BracketLanding1>
 				</div>
 			</R2>
 
 			<R3 className="row-landing-sec3">
-				<div className="col-md-6">
+				<div>
 					<Signup>Want to join the Bootcamp?</Signup>
 					<NavLink to="/program">
 						<Button
@@ -186,8 +229,8 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
@@ -207,8 +250,8 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
@@ -229,14 +272,38 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
 					/>
 				</div>
 			</R4>
+
+			<R5 className="row-landing-sec5">
+				<SubTitle>&lt;Have any questions?&gt;</SubTitle>
+				<p
+					style={{
+						fontFamily: "Raleway",
+						fontWeight: 400,
+						fontSize: 25,
+						paddingLeft: 25,
+					}}
+				>
+					Visit the FAQ and learn more about our program!
+				</p>
+				<NavLink to="/faq">
+					<Button
+						className="faq-button"
+						variant="outline-success"
+						href="/faq"
+						size="lg"
+					>
+						FAQ
+					</Button>{" "}
+				</NavLink>
+			</R5>
 		</>
 	);
 }
