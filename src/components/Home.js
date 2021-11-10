@@ -43,6 +43,7 @@ const R4 = styled.section`
 	flex-wrap: wrap;
 	align-items: center;
 	height: 400px;
+	margin: 0 20px 0 20px;
 
 	.col-sm-3 {
 		flex: 0 0 auto;
@@ -52,15 +53,15 @@ const R4 = styled.section`
 
 const R5 = styled.section`
 	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
+	padding-left: 84px;
 `;
 
 const ImgName = styled.h3`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 220px;
+	padding-right: 218px;
 	margin-bottom: 0;
 	font-size: 20px;
 `;
@@ -68,7 +69,7 @@ const ImgName = styled.h3`
 const ImgSubName = styled.p`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 152px;
+	padding-right: 150px;
 	font-size: 19px;
 	color: grey;
 `;
@@ -197,8 +198,8 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
@@ -218,8 +219,8 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
@@ -240,8 +241,8 @@ function Home() {
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
-							height: 55,
-							width: 55,
+							height: 50,
+							width: 50,
 							border: 1,
 							borderRadius: 50,
 						}}
@@ -250,9 +251,27 @@ function Home() {
 			</R4>
 
 			<R5 className="row-landing-sec5">
-				<div className="col-md-5">
-					<Title>&lt;Have any questions?&gt;</Title>
-				</div>
+				<SubTitle>&lt;Have any questions?&gt;</SubTitle>
+				<p
+					style={{
+						fontFamily: "Raleway",
+						fontWeight: 400,
+						fontSize: 25,
+						paddingLeft: 25,
+					}}
+				>
+					Visit the FAQ and learn more about our program!
+				</p>
+				<NavLink to="/faq">
+					<Button
+						className="faq-button"
+						variant="outline-success"
+						href="/faq"
+						size="lg"
+					>
+						FAQ
+					</Button>{" "}
+				</NavLink>
 			</R5>
 		</>
 	);

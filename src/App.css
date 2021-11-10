@@ -49,3 +49,12 @@ html {
 	border-radius: 50px !important;
 	margin-left: 250px;
 }
+
+.faq-button {
+	padding: 0.5rem 3rem !important;
+	font-size: 1.25rem;
+	border-radius: 3rem !important;
+	float: right;
+	margin-right: 20%;
+	margin-top: -80px;
+}
