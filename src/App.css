@@ -49,3 +49,10 @@ html {
   border-radius: 50px !important;
   margin-left: 250px;
 }
+
+.program-button :hover {
+color: #468845 !important;
+border-color: #468845 !important;
+background-color: #fff !important;
+
+} 

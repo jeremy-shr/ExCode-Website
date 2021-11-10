@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import Burger from "./Burger";
 import RightNavbar from "./RightNav";
+import { NavLink, Link } from "react-router-dom";
  ;
 
 const Nav = styled.nav`
@@ -11,6 +12,7 @@ const Nav = styled.nav`
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
     .logo {
         padding: 15px 0;
@@ -30,10 +32,12 @@ const Nav = styled.nav`
 function Navbar() {
     return(
         <Nav>
+         <NavLink  to="/">
             <div className='logo'>
                 <img src="/excode.png" alt="logo" width= "130" />
             </div>
-            <Burger />
+            </NavLink>
+          <Burger />
         </Nav>
     )
 }
