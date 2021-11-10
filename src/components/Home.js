@@ -54,6 +54,24 @@ const SubTitle = styled.h2`
 	font-family: 'Ubuntu', sans-serif;
 `;
 
+const Bracket1 = styled.h1 `
+
+color: #62b22f;
+font-size: 150px;
+font-family: 'Ubuntu', sans-serif;
+
+`;
+
+const Bracket2 = styled.h1 `
+
+color: #62b22f;
+font-size: 150px;
+font-family: 'Ubuntu', sans-serif;
+
+
+
+`;
+
 function Home() {
 	return (
 		<>
@@ -78,6 +96,9 @@ function Home() {
 		
 			<R2 className = "row-landing-sec2">
 			  <div className="col-md-8">
+			  <Bracket1><div 
+      dangerouslySetInnerHTML={{__html: "{"}}
+    /></Bracket1>
 				<SubTitle>What's ExCode:</SubTitle>
 				<Paragraph>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,6 +128,9 @@ function Home() {
 					dicta blanditiis officiis recusandae id assumenda! Unde,
 					dignissimos?
 				</Paragraph>
+				<Bracket2><div 
+      dangerouslySetInnerHTML={{__html: "}"}}
+    /></Bracket2>
 				</div>
 				</R2>
 
