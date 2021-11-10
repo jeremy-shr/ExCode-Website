@@ -50,6 +50,13 @@ const R4 = styled.section`
 	}
 `;
 
+const R5 = styled.section`
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+`;
+
 const ImgName = styled.h3`
 	font-family: "Raleway";
 	float: right;
@@ -110,7 +117,7 @@ function Home() {
 		<>
 			<R1 className="row-landing-sec1">
 				<div className="col-md-6">
-					<Title>The Leading Student Run</Title>
+					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
 						Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -241,6 +248,12 @@ function Home() {
 					/>
 				</div>
 			</R4>
+
+			<R5 className="row-landing-sec5">
+				<div className="col-md-5">
+					<Title>&lt;Have any questions?&gt;</Title>
+				</div>
+			</R5>
 		</>
 	);
 }
