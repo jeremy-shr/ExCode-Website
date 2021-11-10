@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
+import Burger from "./Burger";
 
 const Ul = styled.ul`
     list-style: none;
@@ -36,22 +37,24 @@ const Ul = styled.ul`
     `
 
 function RightNavbar({open}) {
+    const isOpen = true;
+
     return (
         <Ul open={open}>
              <NavLink
-            to={'/'} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
                 Home
             </NavLink>
             <NavLink
-            to={'/program'} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
                 Program
             </NavLink>
             <NavLink
-            to={'/about'}  style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
                 About Us
             </NavLink>
             <NavLink
-            to={'/faq'} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
                 FAQ
             </NavLink>
         </Ul>

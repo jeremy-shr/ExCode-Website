@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Title = styled.h1`
@@ -92,6 +93,18 @@ const SubTitle = styled.h2`
 	font-family: "Ubuntu", sans-serif;
 `;
 
+const Bracket1 = styled.h1`
+	color: #62b22f;
+	font-size: 150px;
+	font-family: "Ubuntu", sans-serif;
+`;
+
+const Bracket2 = styled.h1`
+	color: #62b22f;
+	font-size: 150px;
+	font-family: "Ubuntu", sans-serif;
+`;
+
 function Home() {
 	return (
 		<>
@@ -111,6 +124,9 @@ function Home() {
 
 			<R2 className="row-landing-sec2">
 				<div className="col-md-8">
+					<Bracket1>
+						<div dangerouslySetInnerHTML={{ __html: "{" }} />
+					</Bracket1>
 					<SubTitle>What's ExCode:</SubTitle>
 					<Paragraph>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,20 +153,25 @@ function Home() {
 						odit dicta blanditiis officiis recusandae id assumenda!
 						Unde, dignissimos?
 					</Paragraph>
+					<Bracket2>
+						<div dangerouslySetInnerHTML={{ __html: "}" }} />
+					</Bracket2>
 				</div>
 			</R2>
 
 			<R3 className="row-landing-sec3">
 				<div className="col-md-6">
 					<Signup>Want to join the Bootcamp?</Signup>
-					<Button
-						className="program-button"
-						variant="outline-success"
-						href="/program"
-						size="lg"
-					>
-						Program
-					</Button>{" "}
+					<NavLink to="/program">
+						<Button
+							className="program-button"
+							variant="outline-success"
+							href="/program"
+							size="lg"
+						>
+							Program
+						</Button>{" "}
+					</NavLink>
 				</div>
 			</R3>
 
