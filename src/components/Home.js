@@ -55,6 +55,24 @@ const SubTitle = styled.h2`
 	font-family: 'Ubuntu', sans-serif;
 `;
 
+const Bracket1 = styled.h1 `
+
+color: #62b22f;
+font-size: 150px;
+font-family: 'Ubuntu', sans-serif;
+
+`;
+
+const Bracket2 = styled.h1 `
+
+color: #62b22f;
+font-size: 150px;
+font-family: 'Ubuntu', sans-serif;
+
+
+
+`;
+
 function Home() {
 	return (
 		<>
@@ -74,40 +92,46 @@ function Home() {
 				</div>
 
 			</R1>
+			
 
-
-
-			<R2 className="row-landing-sec2">
-				<div className="col-md-8">
-					<SubTitle>What's ExCode:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis odit
-						dicta blanditiis officiis recusandae id assumenda! Unde,
-						dignissimos?
-					</Paragraph>
-
-
-
-					<SubTitle>Why Apply:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis odit
-						dicta blanditiis officiis recusandae id assumenda! Unde,
-						dignissimos?
-					</Paragraph>
-
-
-					<SubTitle>For Whom:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis odit
-						dicta blanditiis officiis recusandae id assumenda! Unde,
-						dignissimos?
-					</Paragraph>
+		
+			<R2 className = "row-landing-sec2">
+			  <div className="col-md-8">
+			  <Bracket1><div 
+      dangerouslySetInnerHTML={{__html: "{"}}
+    /></Bracket1>
+				<SubTitle>What's ExCode:</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				 
+	
+			
+			<SubTitle>Why Apply:</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				
+		
+			<SubTitle>For Whom:</SubTitle>
+				<Paragraph>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur corrupti, ducimus, qui iste incidunt
+					perspiciatis saepe asperiores commodi magni beatae quis odit
+					dicta blanditiis officiis recusandae id assumenda! Unde,
+					dignissimos?
+				</Paragraph>
+				<Bracket2><div 
+      dangerouslySetInnerHTML={{__html: "}"}}
+    /></Bracket2>
 				</div>
 			</R2>
 

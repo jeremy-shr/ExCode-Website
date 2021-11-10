@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import Burger from "./Burger";
 import RightNavbar from "./RightNav";
+ ;
 
 const Nav = styled.nav`
     width: 100%;
@@ -30,7 +31,7 @@ function Navbar() {
     return(
         <Nav>
             <div className='logo'>
-                NavBar
+                <img src="/excode.png" alt="logo" width= "130" />
             </div>
             <Burger />
         </Nav>
