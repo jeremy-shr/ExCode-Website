@@ -91,7 +91,8 @@ const SubParagraph = styled.p`
 `;
 
 const BracketLanding1 = styled.div`
-	display: flex;`
+	display: flex;
+`;
 
 const Signup = styled.h2`
 	color: #fff;
@@ -113,30 +114,24 @@ const SubTitle = styled.h2`
 `;
 
 const Bracket1 = styled.h1`
-
-color: #62b22f;
-font-size: 170px;
-font-family: 'Ubuntu', sans-serif;
-position: absolute;
-left: 175px;
-
-div {
+	color: #62b22f;
+	font-size: 170px;
+	font-family: "Ubuntu", sans-serif;
 	position: absolute;
-    bottom: -180px;
-}
+	left: 175px;
 
+	div {
+		position: absolute;
+		bottom: -180px;
+	}
 `;
 
 const Bracket2 = styled.h1`
-
-color: #62b22f;
-font-size: 150px;
-font-family: 'Ubuntu', sans-serif;
-position: absolute;
-right: 175px;
-
-
-
+	color: #62b22f;
+	font-size: 150px;
+	font-family: "Ubuntu", sans-serif;
+	position: absolute;
+	right: 175px;
 `;
 
 function Home() {
@@ -156,55 +151,52 @@ function Home() {
 				</div>
 			</R1>
 
-
-
 			<R2 className="row-landing-sec2">
-				<div style={{ paddingLeft: '250px', paddingRight: '250px' }}>
-
-						<BracketLanding1>
-							<Bracket1><div
-								dangerouslySetInnerHTML={{ __html: "{" }}
-							/></Bracket1>
+				<div style={{ paddingLeft: "250px", paddingRight: "250px" }}>
+					<BracketLanding1>
+						<Bracket1>
+							<div dangerouslySetInnerHTML={{ __html: "{" }} />
+						</Bracket1>
+						<div>
+							<SubTitle>What's ExCode:</SubTitle>
 							<div>
-								<SubTitle>What's ExCode:</SubTitle>
-								<div>
-									<Paragraph>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Consequuntur corrupti, ducimus, qui iste incidunt
-										perspiciatis saepe asperiores commodi magni beatae quis odit
-										dicta blanditiis officiis recusandae id assumenda! Unde,
-										dignissimos?
-									</Paragraph>
-								</div>
-							</div>
-						</BracketLanding1>
-
-
-
-						<SubTitle>Why Apply:</SubTitle>
-						<Paragraph>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Consequuntur corrupti, ducimus, qui iste incidunt
-							perspiciatis saepe asperiores commodi magni beatae quis odit
-							dicta blanditiis officiis recusandae id assumenda! Unde,
-							dignissimos?
-						</Paragraph>
-
-						<BracketLanding1>
-							<div>
-								<SubTitle>For Whom:</SubTitle>
 								<Paragraph>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Consequuntur corrupti, ducimus, qui iste incidunt
-									perspiciatis saepe asperiores commodi magni beatae quis odit
-									dicta blanditiis officiis recusandae id assumenda! Unde,
-									dignissimos?
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Consequuntur corrupti,
+									ducimus, qui iste incidunt perspiciatis
+									saepe asperiores commodi magni beatae quis
+									odit dicta blanditiis officiis recusandae id
+									assumenda! Unde, dignissimos?
 								</Paragraph>
 							</div>
-							<Bracket2><div
-								dangerouslySetInnerHTML={{ __html: "}" }}
-							/></Bracket2>
-						</BracketLanding1>
+						</div>
+					</BracketLanding1>
+
+					<SubTitle>Why Apply:</SubTitle>
+					<Paragraph>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Consequuntur corrupti, ducimus, qui iste incidunt
+						perspiciatis saepe asperiores commodi magni beatae quis
+						odit dicta blanditiis officiis recusandae id assumenda!
+						Unde, dignissimos?
+					</Paragraph>
+
+					<BracketLanding1>
+						<div>
+							<SubTitle>For Whom:</SubTitle>
+							<Paragraph>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Consequuntur corrupti,
+								ducimus, qui iste incidunt perspiciatis saepe
+								asperiores commodi magni beatae quis odit dicta
+								blanditiis officiis recusandae id assumenda!
+								Unde, dignissimos?
+							</Paragraph>
+						</div>
+						<Bracket2>
+							<div dangerouslySetInnerHTML={{ __html: "}" }} />
+						</Bracket2>
+					</BracketLanding1>
 				</div>
 			</R2>
 
@@ -219,7 +211,7 @@ function Home() {
 							size="lg"
 						>
 							Program
-						</Button>{" "}
+						</Button>
 					</NavLink>
 				</div>
 			</R3>
@@ -311,7 +303,7 @@ function Home() {
 						size="lg"
 					>
 						FAQ
-					</Button>{" "}
+					</Button>
 				</NavLink>
 			</R5>
 		</>
