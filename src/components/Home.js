@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Title = styled.h1`
-	font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
 	font-size: 53px;
 `;
@@ -22,17 +22,11 @@ const R1 = styled.section`
 const R2 = styled.section`
 	height: 950px;
 	display: flex !important;
-<<<<<<< HEAD
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
 	padding-top: 150px;
 	padding-bottom: 150px;
-=======
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
->>>>>>> 89e31fbbc6bdaa59a4ef2720c3c81ebbdb837f1c
 `;
 
 const R3 = styled.section`
@@ -142,11 +136,7 @@ function Home() {
 					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Facilis, esse cupiditate. Quas, praesentium
-						asperiores? Ea, voluptates provident dicta enim nostrum
-						facilis commodi quas illum officiis libero quod sequi
-						nemo error.
+						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
 					</Paragraph>
 				</div>
 			</R1>

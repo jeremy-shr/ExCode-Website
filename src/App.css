@@ -44,12 +44,18 @@ html {
 }
 
 .program-button {
-	color: #fff !important;
-	border-color: #fff !important;
-	border-radius: 50px !important;
-	margin-left: 250px;
+  color: #fff !important;
+  border-color: #fff !important;
+  border-radius: 50px !important;
+  margin-left: 250px;
 }
 
+.program-button:hover {
+color: #468845 !important;
+border-color: #468845 !important;
+background-color: #fff !important;
+
+} 
 .faq-button {
 	padding: 0.5rem 3rem !important;
 	font-size: 1.25rem;
