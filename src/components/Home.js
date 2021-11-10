@@ -1,5 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Title = styled.h1`
@@ -57,65 +58,67 @@ const SubTitle = styled.h2`
 function Home() {
 	return (
 		<>
-		<R1 className = "row-landing-sec1">
-		
-		   <div className="col-md-6">
-				
-				<Title>The Leading Student Run</Title>
-				<Title>Coding Bootcamp In The UK</Title> 
-				<Paragraph>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Facilis, esse cupiditate. Quas, praesentium asperiores? Ea,
-					voluptates provident dicta enim nostrum facilis commodi quas
-					illum officiis libero quod sequi nemo error.
-				</Paragraph>
-				
-			  </div>
-			 
-			</R1>
-			
+			<R1 className="row-landing-sec1">
 
-		
-			<R2 className = "row-landing-sec2">
-			  <div className="col-md-8">
-				<SubTitle>What's ExCode:</SubTitle>
-				<Paragraph>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequuntur corrupti, ducimus, qui iste incidunt
-					perspiciatis saepe asperiores commodi magni beatae quis odit
-					dicta blanditiis officiis recusandae id assumenda! Unde,
-					dignissimos?
-				</Paragraph>
-				 
-	
-			
-			<SubTitle>Why Apply:</SubTitle>
-				<Paragraph>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequuntur corrupti, ducimus, qui iste incidunt
-					perspiciatis saepe asperiores commodi magni beatae quis odit
-					dicta blanditiis officiis recusandae id assumenda! Unde,
-					dignissimos?
-				</Paragraph>
-				
-		
-			<SubTitle>For Whom:</SubTitle>
-				<Paragraph>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequuntur corrupti, ducimus, qui iste incidunt
-					perspiciatis saepe asperiores commodi magni beatae quis odit
-					dicta blanditiis officiis recusandae id assumenda! Unde,
-					dignissimos?
-				</Paragraph>
+				<div className="col-md-6">
+
+					<Title>The Leading Student Run</Title>
+					<Title>Coding Bootcamp In The UK</Title>
+					<Paragraph>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Facilis, esse cupiditate. Quas, praesentium asperiores? Ea,
+						voluptates provident dicta enim nostrum facilis commodi quas
+						illum officiis libero quod sequi nemo error.
+					</Paragraph>
+
 				</div>
-				</R2>
+
+			</R1>
+
+
+
+			<R2 className="row-landing-sec2">
+				<div className="col-md-8">
+					<SubTitle>What's ExCode:</SubTitle>
+					<Paragraph>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Consequuntur corrupti, ducimus, qui iste incidunt
+						perspiciatis saepe asperiores commodi magni beatae quis odit
+						dicta blanditiis officiis recusandae id assumenda! Unde,
+						dignissimos?
+					</Paragraph>
+
+
+
+					<SubTitle>Why Apply:</SubTitle>
+					<Paragraph>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Consequuntur corrupti, ducimus, qui iste incidunt
+						perspiciatis saepe asperiores commodi magni beatae quis odit
+						dicta blanditiis officiis recusandae id assumenda! Unde,
+						dignissimos?
+					</Paragraph>
+
+
+					<SubTitle>For Whom:</SubTitle>
+					<Paragraph>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Consequuntur corrupti, ducimus, qui iste incidunt
+						perspiciatis saepe asperiores commodi magni beatae quis odit
+						dicta blanditiis officiis recusandae id assumenda! Unde,
+						dignissimos?
+					</Paragraph>
+				</div>
+			</R2>
 
 			<R3 className="row-landing-sec3">
-			<div className="col-md-6">
-				<Signup>Want to join the Bootcamp?</Signup>
-				<Button className="program-button" variant="outline-success" href="/program" size="lg">Program</Button>{' '}
-			</div>
-			
+				<div className="col-md-6">
+					<Signup>Want to join the Bootcamp?</Signup>
+					<NavLink to="/program">
+						<Button className="program-button" variant="outline-success" href="/program" size="lg">Program</Button>{' '}
+					</NavLink>
+				</div>
+
 
 			</R3>
 		</>
