@@ -8,7 +8,6 @@ import Home from "./components/Home";
 import Navbar from "./components/Nav/Navbar";
 import RightNavbar from "./components/Nav/RightNav";
 
-
 function App() {
 	return (
 		<>
