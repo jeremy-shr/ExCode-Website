@@ -44,23 +44,15 @@ html {
 }
 
 .program-button {
-<<<<<<< HEAD
   color: #fff !important;
   border-color: #fff !important;
   border-radius: 50px !important;
   margin-left: 250px;
 }
 
-.program-button :hover {
+.program-button:hover {
 color: #468845 !important;
 border-color: #468845 !important;
 background-color: #fff !important;
 
 } 
-=======
-	color: #fff !important;
-	border-color: #fff !important;
-	border-radius: 50px !important;
-	margin-left: 250px;
-}
->>>>>>> 20a522b9b3920afc8ffd9ba855c21ad889e5a4f2
