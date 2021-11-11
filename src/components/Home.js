@@ -118,6 +118,12 @@ const Bracket2 = styled.h1`
 	right: 10vw;
 `;
 
+const JoinBanner = styled.div`
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+`;
+
 function Home() {
 	return (
 		<>
@@ -180,8 +186,8 @@ function Home() {
 			</R2>
 
 			<div className='container-fluid'>
-			<R3 className="row-landing-sec3">
-				<div>
+			<R3 className="row">
+				<JoinBanner>
 					<Signup>Want to join the Bootcamp?</Signup>
 					<NavLink to="/program">
 						<Button
@@ -193,7 +199,7 @@ function Home() {
 							Program
 						</Button>
 					</NavLink>
-				</div>
+				</JoinBanner>
 			</R3>
 			</div>
 		
