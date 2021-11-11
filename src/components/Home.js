@@ -22,17 +22,11 @@ const R1 = styled.section`
 const R2 = styled.section`
 	height: 950px;
 	display: flex !important;
-<<<<<<< HEAD
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
 	padding-top: 150px;
 	padding-bottom: 150px;
-=======
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
->>>>>>> 89e31fbbc6bdaa59a4ef2720c3c81ebbdb837f1c
 `;
 
 const R3 = styled.section`
@@ -53,10 +47,6 @@ const R4 = styled.section`
 	height: 400px;
 	margin: 0 20px 0 20px;
 
-	.col-sm-3 {
-		flex: 0 0 auto;
-		width: 28%;
-	}
 `;
 
 const R5 = styled.section`
@@ -224,8 +214,10 @@ function Home() {
 				</div>
 			</R3>
 
-			<R4 className="row-landing-sec4">
-				<div className="col-sm-3">
+		
+			<div className='container-fluid'>
+				<div className='row'>
+				<div className="col-sm">
 					<SubParagraph>
 						/* Lorem ipsum dolor sit amet, consectetur adipisicing
 						elit. Aut repellendus tempore ducimus consectetur
@@ -246,7 +238,7 @@ function Home() {
 						}}
 					/>
 				</div>
-				<div className="col-sm-3">
+				<div className="col-sm">
 					<SubParagraph>
 						/* Lorem ipsum dolor sit amet, consectetur adipisicing
 						elit. Aut repellendus tempore ducimus consectetur
@@ -267,7 +259,7 @@ function Home() {
 						}}
 					/>
 				</div>
-				<div className="col-sm-3">
+				<div className="col-sm">
 					<SubParagraph>
 						/* Lorem ipsum dolor sit amet, consectetur adipisicing
 						elit. Aut repellendus tempore ducimus consectetur
@@ -275,10 +267,10 @@ function Home() {
 						voluptatibus excepturi eligendi molestiae laboriosam
 						sunt reprehenderit? *\
 					</SubParagraph>
-
-					<ImgName>Zachary Dive</ImgName>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					<img
+					<div className='container-fluid'>
+					<div className='row'>
+						<div className='col-md'>
+						<img
 						src="/profile-pic.jpg"
 						alt="Quoter pic"
 						style={{
@@ -288,8 +280,21 @@ function Home() {
 							borderRadius: 50,
 						}}
 					/>
+						</div>
+						<div className='col-md'>
+							<div className='row' style={{width: "353px"}}>
+					<ImgName>Zachary Dive</ImgName>
+					</div>
+					<div className='row' style={{width: "353px"}}>
+					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+					</div>
+					</div>
+					</div>
 				</div>
-			</R4>
+				</div>
+				</div>
+				</div>
+			
 
 			<R5 className="row-landing-sec5">
 				<SubTitle>&lt;Have any questions?&gt;</SubTitle>
