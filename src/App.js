@@ -7,6 +7,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Nav/Navbar";
 import RightNavbar from "./components/Nav/RightNav";
+import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/about" element={<About />} />
+				<Route exact path="/faq" element={<Faq />} />
 			</Routes>
 			<Footer/>
 		</>
