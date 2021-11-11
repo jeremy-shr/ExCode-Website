@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Title = styled.h1`
-	font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
 	font-size: 53px;
 `;
@@ -137,11 +137,7 @@ function Home() {
 					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Facilis, esse cupiditate. Quas, praesentium
-						asperiores? Ea, voluptates provident dicta enim nostrum
-						facilis commodi quas illum officiis libero quod sequi
-						nemo error.
+						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
 					</Paragraph>
 				</div>
 			</R1>

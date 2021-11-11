@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Nav/Navbar";
 import RightNavbar from "./components/Nav/RightNav";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				<Route exact path="/about" element={<About />} />
 				<Route exact path="/faq" element={<Faq />} />
 			</Routes>
+			<Footer/>
 		</>
 	);
 }
