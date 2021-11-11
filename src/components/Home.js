@@ -6,12 +6,12 @@ import styled from "styled-components";
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 53px;
+	font-size: 2vw;
 `;
 
 const R1 = styled.section`
 	background-image: url("/course.png");
-	height: 600px;
+	height: 75vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -90,7 +90,7 @@ const Signup = styled.h2`
 `;
 
 const Paragraph = styled.p`
-	font-size: 20px;
+	font-size: 1vw;
 	margin-bottom: 75px;
 	text-align: justify;
 `;
@@ -127,7 +127,7 @@ function Home() {
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
-				<div className="col-md-6">
+				<div style={{textAlign: 'center', fontSize: '2vw'}}>
 					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
