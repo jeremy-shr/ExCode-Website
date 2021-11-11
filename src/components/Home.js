@@ -25,10 +25,11 @@ const R2 = styled.section`
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
+	margin: 5vw 0 5vw 0;
 `;
 
 const R3 = styled.section`
-	height: 250px;
+	height: 25vh;
 	background-color: #468845;
 	display: flex !important;
 	flex-direction: column;
@@ -42,7 +43,7 @@ const R4 = styled.section`
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 400px;
+	height: 40vh;
 	margin: 0 20px 0 20px;
 
 `;
@@ -85,41 +86,36 @@ const BracketLanding1 = styled.div`
 const Signup = styled.h2`
 	color: #fff;
 	font-family: "Ubuntu";
-	font-size: 50px;
+	font-size: 2vw;
 	font-weight: bold;
 `;
 
 const Paragraph = styled.p`
 	font-size: 1vw;
-	margin-bottom: 75px;
+	margin-bottom: 2vw;
 	text-align: justify;
 `;
 
 const SubTitle = styled.h2`
 	color: #62b22f;
-	font-size: 60px;
+	font-size: 2.5vw;
 	font-family: "Ubuntu", sans-serif;
 `;
 
 const Bracket1 = styled.h1`
 	color: #62b22f;
-	font-size: 170px;
+	font-size: 5vw;
 	font-family: "Ubuntu", sans-serif;
 	position: absolute;
-	left: 175px;
-
-	div {
-		position: absolute;
-		bottom: -180px;
-	}
+	left: 10vw;
 `;
 
 const Bracket2 = styled.h1`
 	color: #62b22f;
-	font-size: 170px;
+	font-size: 5vw;
 	font-family: "Ubuntu", sans-serif;
 	position: absolute;
-	right: 175px;
+	right: 10vw;
 `;
 
 function Home() {
@@ -138,7 +134,7 @@ function Home() {
 			</R1>
 
 			<R2 className="container-fluid">
-				<div className="col" style={{ paddingLeft: "250px", paddingRight: "250px" }}>
+				<div className="col" style={{ paddingLeft: "15vw", paddingRight: "15vw" }}>
 						<Bracket1>
 							<div dangerouslySetInnerHTML={{ __html: "{" }} />
 						</Bracket1>
@@ -288,7 +284,7 @@ function Home() {
 					style={{
 						fontFamily: "Raleway",
 						fontWeight: 400,
-						fontSize: 25,
+						fontSize: '2.5vw',
 						paddingLeft: 25,
 					}}
 				>
