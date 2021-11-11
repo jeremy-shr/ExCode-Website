@@ -20,13 +20,11 @@ const R1 = styled.section`
 `;
 
 const R2 = styled.section`
-	height: 950px;
+	width: 100%;
 	display: flex !important;
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
-	padding-top: 150px;
-	padding-bottom: 150px;
 `;
 
 const R3 = styled.section`
@@ -118,7 +116,7 @@ const Bracket1 = styled.h1`
 
 const Bracket2 = styled.h1`
 	color: #62b22f;
-	font-size: 150px;
+	font-size: 170px;
 	font-family: "Ubuntu", sans-serif;
 	position: absolute;
 	right: 175px;
@@ -127,7 +125,8 @@ const Bracket2 = styled.h1`
 function Home() {
 	return (
 		<>
-			<R1 className="row-landing-sec1">
+			<R1 className="container-fluid">
+				<div className='row'>
 				<div className="col-md-6">
 					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
@@ -135,15 +134,15 @@ function Home() {
 						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
 					</Paragraph>
 				</div>
+				</div>
 			</R1>
 
-			<R2 className="row-landing-sec2">
-				<div style={{ paddingLeft: "250px", paddingRight: "250px" }}>
-					<BracketLanding1>
+			<R2 className="container-fluid">
+				<div className="col" style={{ paddingLeft: "250px", paddingRight: "250px" }}>
 						<Bracket1>
 							<div dangerouslySetInnerHTML={{ __html: "{" }} />
 						</Bracket1>
-						<div>
+
 							<SubTitle>What's ExCode:</SubTitle>
 							<div>
 								<Paragraph>
@@ -155,8 +154,6 @@ function Home() {
 									assumenda! Unde, dignissimos?
 								</Paragraph>
 							</div>
-						</div>
-					</BracketLanding1>
 
 					<SubTitle>Why Apply:</SubTitle>
 					<Paragraph>
@@ -186,6 +183,7 @@ function Home() {
 				</div>
 			</R2>
 
+			<div className='container-fluid'>
 			<R3 className="row-landing-sec3">
 				<div>
 					<Signup>Want to join the Bootcamp?</Signup>
@@ -201,7 +199,7 @@ function Home() {
 					</NavLink>
 				</div>
 			</R3>
-
+			</div>
 		
 			<div className='container-fluid'>
 				<div className='row'>

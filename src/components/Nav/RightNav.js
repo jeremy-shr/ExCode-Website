@@ -42,19 +42,19 @@ function RightNavbar({open}) {
     return (
         <Ul open={open}>
              <NavLink
-            to={'/'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 Home
             </NavLink>
             <NavLink
-            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 Program
             </NavLink>
             <NavLink
-            to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 About Us
             </NavLink>
             <NavLink
-            to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '53px' }}>
+            to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 FAQ
             </NavLink>
         </Ul>
