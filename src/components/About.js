@@ -1,109 +1,89 @@
 import React from "react";
 import styled from "styled-components";
 
-const Grid = styled.div``;
-
-const Row = styled.div`
+const R1 = styled.section`
 	display: flex;
+	flex-direction: row;
+	align-items: center;
 `;
 
-const Col = styled.div``;
+const R2 = styled.section`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+`;
 
 const Title = styled.h1`
-	position: fixed;
-	right: 150px;
-	width: 300px;
-	font-size: 3em;
-	margin: 1em;
-	padding: 0.25em 1em;
-	border: 2px solid black;
-	border-radius: 3px;
-`;
-
-const Paratext = styled.p`
-	position: fixed;
-	right: 245px;
-	top: 200px;
-	width: 300px;
+	font-family: "Ubuntu", sans-serif, bold;
+	font-style: bold;
+	font-size: 53px;
+	text-align: center;
 `;
 
 const SubTitle = styled.h2`
-	position: absolute;
-	left: 20%;
-	top: 100%;
+	font-family: "Ubuntu", sans-serif, bold;
+	font-style: bold;
+	font-size: 48px;
+	text-align: center;
+	padding-top: 50px;
+`;
+
+const Paragraph = styled.p`
+	font-family: "Ubuntu", sans-serif;
+	width: 400px;
+	justify-content: center;
+	text-align: center;
 `;
 
 function About() {
 	return (
-		<div>
-			<Grid>
-				<Row>
-					<Col size={1}>
-						<Title>The ExCode Mission</Title>
-					</Col>
-				</Row>
-				<Row>
-					<Col size={2}>
-						<Paratext>
+		<>
+			<R1 className="row-about-sec1">
+				<div
+					className="col-md-5"
+					style={{ backgroundColor: "#468845" }}
+				>
+					<img
+						src="profile-pic.jpg"
+						alt="About Pic"
+						style={{
+							borderRadius: 300,
+							height: 500,
+							width: 500,
+							marginLeft: 85,
+							paddingTop: 20,
+							paddingBottom: 20,
+						}}
+					/>
+				</div>
+				<div className="col-md-5">
+					<Title>
+						The <strong>EX</strong> Code
+					</Title>
+					<Title>Mission</Title>
+					<div style={{ maxWidth: 600, marginLeft: 163 }}>
+						<Paragraph>
 							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ex, minus! Praesentium suscipit, dolorum velit
-							rerum sapiente consequatur dolore labore incidunt
-							illo ex accusantium, quasi, vero nobis repellat
-							expedita laudantium? Pariatur. Accusamus velit
-							expedita repellendus dicta maxime impedit earum,
-							numquam ab debitis accusantium libero similique amet
-							voluptatibus atque ad illo ipsam sequi et doloremque
-							quos non nesciunt mollitia vel necessitatibus?
-							Ullam. Cum quo amet recusandae expedita labore
-							obcaecati minima repellat quam soluta, officia
-							harum? Eveniet similique ea ullam sequi minus enim
-							itaque maiores, aperiam dolores veniam in atque,
-							amet hic. Maxime.
-						</Paratext>
-					</Col>
-				</Row>
-			</Grid>
+							elit. Laboriosam quaerat dolor, unde sunt possimus
+							eum, ipsum quibusdam totam cum ullam voluptatem
+							consequuntur reiciendis, mollitia animi hic id
+							velit! Molestias, ipsa.
+						</Paragraph>
+					</div>
+				</div>
+			</R1>
 
-			<br />
-
-			<SubTitle>Our Values</SubTitle>
-
-			<div>
-				<h3>Diversity</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Mollitia ullam laborum repellat odit quisquam reiciendis ad,
-					molestiae dicta atque eaque est molestias aliquid aliquam
-					id! Quae sapiente magni illo non.
-				</p>
-				<h3>Sustainability</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Quaerat modi aspernatur totam soluta aut quidem eligendi
-					animi architecto! Harum possimus quaerat nam cupiditate hic
-					reprehenderit eligendi suscipit blanditiis ab autem!
-				</p>
-				<h3>Another nice word</h3>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Adipisci quis delectus repellendus labore recusandae
-					consectetur deleniti animi ipsam id, optio est iste
-					perferendis dolorem et omnis fugit aliquam rem minus.
-				</p>
-			</div>
-
-			<div>
-				<h2>What Defines ExCode?</h2>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Molestiae tempore cum corrupti facilis perferendis dolorum
-					molestias minima, atque veritatis vel quidem repellat
-					cupiditate ratione repudiandae ipsum suscipit eligendi.
-					Beatae, amet.
-				</p>
-				<h2>Our Team</h2>
-			</div>
-		</div>
+			<R2 className="row-about-sec2">
+				<div
+					className="col-md-5"
+					style={{ backgroundColor: "#468845", height: 600 }}
+				>
+					<SubTitle>Our Values</SubTitle>
+					<img src="" alt="" />
+					<div></div>
+				</div>
+			</R2>
+		</>
 	);
 }
 
