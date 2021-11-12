@@ -125,13 +125,13 @@ function Home() {
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
-				<div style={{textAlign: 'center', fontSize: '2vw'}}>
-					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
-					<Title>Coding Bootcamp In The UK</Title>
-					<Paragraph>
-						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
-					</Paragraph>
-				</div>
+					<div style={{textAlign: 'center', fontSize: '2vw'}}>
+						<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
+						<Title>Coding Bootcamp In The UK</Title>
+						<Paragraph>
+							Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
+						</Paragraph>
+					</div>
 				</div>
 			</R1>
 
@@ -295,8 +295,6 @@ function Home() {
 					</div>
 				</div>
 			</Comments>
-			
-
 			<R5 className="row-landing-sec5">
 				<SubTitle><TypeWriter typing={0.2}><span style={{color: "#62b22f" }}>&lt;Have any questions?&gt;</span></TypeWriter></SubTitle>
 				<p
@@ -320,6 +318,8 @@ function Home() {
 					</Button>
 				</NavLink>
 			</R5>
+			
+
 		</>
 	);
 }

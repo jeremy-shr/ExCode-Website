@@ -91,6 +91,8 @@ function Faq() {
                     {Data.map((item, index) => {
                         return (
                             <>
+                            <div className='container'>
+                                <div className='row'>
                                 <Wrap onClick={() => toggle(index)} key={index}>
                                     <h1>{item.question}</h1>
                                     <span>+</span>
@@ -100,6 +102,8 @@ function Faq() {
                                         <p>{item.answer}</p>
                                     </Dropdown>
                                 ) : null}
+                                </div>
+                            </div>
                             </>
                         );
                     })}
