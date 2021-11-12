@@ -88,7 +88,7 @@ const Paragraph = styled.p`
 
 const SubTitle = styled.h2`
 	color: #62b22f;
-	font-size: 2.5vw;
+	font-size: 30px;
 	font-family: "Ubuntu", sans-serif;
 `;
 
