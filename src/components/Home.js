@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
+
 	font-size: 2vw;
 `;
 

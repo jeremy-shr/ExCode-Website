@@ -3,9 +3,10 @@ import { Data } from "./Data";
 import styled from "styled-components";
 
 const Title = styled.h1`
-	font-family: "Raleway", sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	font-style: bold;
 	font-size: 53px;
+    color: #62B22F
 `;
 
 const AccordionSection = styled.div`

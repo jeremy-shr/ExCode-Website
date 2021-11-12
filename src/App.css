@@ -81,3 +81,15 @@
 	display: flex;
 	justify-content: center;
 }
+
+.footLink {
+  color: black
+	
+}
+
+.footLink:hover {
+  color: #62b22f;
+	
+}
+
+

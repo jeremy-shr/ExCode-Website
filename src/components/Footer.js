@@ -23,6 +23,9 @@ const C1 = styled.div `
 `;
 
 const C2 = styled.div `
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
+    right: 100px ;
 
 `;
 
@@ -45,10 +48,10 @@ function Footer() {
                                 </div>
                          </NavLink>
                       
-                            <NavLink  to="/">Home</NavLink>
-                            <NavLink  to="/about">About Us</NavLink>
-                            <NavLink  to="/program">Program</NavLink>
-                            <NavLink  to="/faq">FAQ</NavLink>
+                            <NavLink  className = "footLink" to="/">Home</NavLink>
+                            <NavLink className = "footLink" to="/about">About Us</NavLink>
+                            <NavLink  className = "footLink" to="/program">Program</NavLink>
+                            <NavLink  className = "footLink"to="/faq">FAQ</NavLink>
                         
                     </C1>
                      <C2 className = "col-md-4">
