@@ -68,10 +68,10 @@
 	padding-left: 50px;
 }
 
-.carousel-size {
-	height: 1000px;
+.footLink {
+	color: black;
 }
 
-.carousel-text {
-	margin-bottom: -42% !important;
+.footLink:hover {
+	color: #62b22f;
 }

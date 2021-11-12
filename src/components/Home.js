@@ -2,16 +2,18 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import TypeWriter from 'react-typewriter';
+
 
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 2vw;
+	font-size: 50px;
 `;
 
 const R1 = styled.section`
 	background-image: url("/course.png");
-	height: 75vh;
+	height: 400px;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -29,7 +31,7 @@ const R2 = styled.section`
 `;
 
 const R3 = styled.section`
-	height: 25vh;
+	height: 200px;
 	background-color: #468845;
 	display: flex !important;
 	flex-direction: column;
@@ -37,16 +39,6 @@ const R3 = styled.section`
 	justify-content: center;
 `;
 
-const R4 = styled.section`
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	height: 40vh;
-	margin: 0 20px 0 20px;
-
-`;
 
 const R5 = styled.section`
 	display: flex;
@@ -58,7 +50,7 @@ const R5 = styled.section`
 const ImgName = styled.h3`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 218px;
+	
 	margin-bottom: 0;
 	font-size: 20px;
 `;
@@ -91,14 +83,13 @@ const Signup = styled.h2`
 `;
 
 const Paragraph = styled.p`
-	font-size: 1vw;
+	font-size: 20px;
 	margin-bottom: 2vw;
-	text-align: justify;
 `;
 
 const SubTitle = styled.h2`
 	color: #62b22f;
-	font-size: 2.5vw;
+	font-size: 30px;
 	font-family: "Ubuntu", sans-serif;
 `;
 
@@ -124,16 +115,22 @@ const JoinBanner = styled.div`
     flex-direction: column;
 `;
 
+const Comments = styled.div`
+	display: flex;
+	place-content: center;
+`;
+
+
 function Home() {
 	return (
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
 				<div style={{textAlign: 'center', fontSize: '2vw'}}>
-					<Title>The &lt;Leading&gt; Student Run</Title>
+					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
-						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
+						Learn how to code from scratch and receive a certificate qualifying you in Python!
 					</Paragraph>
 				</div>
 				</div>
@@ -145,39 +142,27 @@ function Home() {
 							<div dangerouslySetInnerHTML={{ __html: "{" }} />
 						</Bracket1>
 
-							<SubTitle>What's ExCode:</SubTitle>
-							<div>
-								<Paragraph>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Consequuntur corrupti,
-									ducimus, qui iste incidunt perspiciatis
-									saepe asperiores commodi magni beatae quis
-									odit dicta blanditiis officiis recusandae id
-									assumenda! Unde, dignissimos?
-								</Paragraph>
-							</div>
-
-					<SubTitle>Why Apply:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis
-						odit dicta blanditiis officiis recusandae id assumenda!
-						Unde, dignissimos?
-					</Paragraph>
-
-					<BracketLanding1>
+						<SubTitle>What's ExCode:</SubTitle>
 						<div>
-							<SubTitle>For Whom:</SubTitle>
 							<Paragraph>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Consequuntur corrupti,
-								ducimus, qui iste incidunt perspiciatis saepe
-								asperiores commodi magni beatae quis odit dicta
-								blanditiis officiis recusandae id assumenda!
-								Unde, dignissimos?
+							ExCode is an 8-week  bi-termly coding bootcamp run entirely by students at the University of Exeter.  It is taught every Tuesday at 18:30 in the Forum Auditorium, by a lead professor and a team of the best teaching assistants on campus. Classes are an hour long, with a 30minute lecture followed by 30minutes of practice questions in the Forum Labs. This will give you a chance to learn to code in a friendly and supporting environment, after your day of lectures.
+										
+																	
 							</Paragraph>
 						</div>
+
+						<SubTitle>Why Apply:</SubTitle>
+						<Paragraph>
+						ExCode is currently teaching the fundamentals of Python, which is a great programming language to start with.  Python can be used to build simple programs, the backbone of a website and has a very intuitive syntax for beginners. Therefore if you have never coded and want to give it a try, ExCode is the place to learn!
+						</Paragraph>
+
+						<BracketLanding1>
+							<div>
+								<SubTitle>For Whom:</SubTitle>
+								<Paragraph>
+								If you are a student at the University of Exeter, you are welcome to apply for our next bootcamp. No prior programming experience is needed as the aim of the bootcamp is to foster the fundamental coding skills to begin your journey, and start writing your own programs! We encourage anyone who is not currently studying computer science to join.
+								</Paragraph>
+							</div>
 						<Bracket2>
 							<div dangerouslySetInnerHTML={{ __html: "}" }} />
 						</Bracket2>
@@ -186,106 +171,124 @@ function Home() {
 			</R2>
 
 			<div className='container-fluid'>
-			<R3 className="row">
-				<JoinBanner>
-					<Signup>Want to join the Bootcamp?</Signup>
-					<NavLink to="/program">
-						<Button
-							className="program-button"
-							variant="outline-success"
-							href="/program"
-							size="lg"
-						>
-							Program
-						</Button>
-					</NavLink>
-				</JoinBanner>
-			</R3>
+				<R3 className="row">
+					<JoinBanner>
+						<Signup>Want to join the Bootcamp?</Signup>
+						<NavLink to="/program">
+							<Button
+								className="program-button"
+								variant="outline-success"
+								href="/program"
+								size="lg"
+							>
+								Program
+							</Button>
+						</NavLink>
+					</JoinBanner>
+				</R3>
 			</div>
 		
-			<div className='container-fluid'>
+			<Comments className='container-fluid' style={{margin: '80px 0px 80px 0px'}}>
 				<div className='row'>
 				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<ImgName>Zachary Dive</ImgName>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
-				</div>
-				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<ImgName>Zachary Dive</ImgName>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
-				</div>
-				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<div className='container-fluid'>
-					<div className='row'>
-						<div className='col-md'>
-						<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
 						</div>
-						<div className='col-md'>
+						<div className='col'>
 							<div className='row' style={{width: "353px"}}>
-					<ImgName>Zachary Dive</ImgName>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							</div>
+						</div>
 					</div>
-					<div className='row' style={{width: "353px"}}>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
 					</div>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
+						</div>
+						<div className='col'>
+							<div className='row' style={{width: "353px"}}>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
+						</div>
+						<div className='col'>
+							<div className='row' style={{width: "353px"}}>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							</div>
+						</div>
 					</div>
 					</div>
 				</div>
-				</div>
-				</div>
-				</div>
+			</Comments>
 			
 
 			<R5 className="row-landing-sec5">
-				<SubTitle>&lt;Have any questions?&gt;</SubTitle>
+				<SubTitle><TypeWriter typing={0.2}><span style={{color: "#62b22f" }}>&lt;Have any questions?&gt;</span></TypeWriter></SubTitle>
 				<p
 					style={{
 						fontFamily: "Raleway",
@@ -294,7 +297,7 @@ function Home() {
 						paddingLeft: 25,
 					}}
 				>
-					Visit the FAQ and learn more about our program!
+					Visit the FAQ and learn more about our bootcamp!
 				</p>
 				<NavLink to="/faq">
 					<Button
