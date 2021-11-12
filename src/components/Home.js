@@ -126,15 +126,6 @@ function Home() {
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
-<<<<<<< HEAD
-					<div style={{textAlign: 'center', fontSize: '2vw'}}>
-						<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
-						<Title>Coding Bootcamp In The UK</Title>
-						<Paragraph>
-							Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
-						</Paragraph>
-					</div>
-=======
 				<div style={{textAlign: 'center', fontSize: '2vw'}}>
 					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
 					<Title>Coding Bootcamp In The UK</Title>
@@ -142,7 +133,6 @@ function Home() {
 						Learn how to code from scratch and receive a certificate qualifying you in Python!
 					</Paragraph>
 				</div>
->>>>>>> f777f1b88f22ed0ff857f17011dd3ae6f768a08a
 				</div>
 			</R1>
 
