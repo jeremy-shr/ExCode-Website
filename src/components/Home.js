@@ -6,12 +6,12 @@ import styled from "styled-components";
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 2vw;
+	font-size: 20px;
 `;
 
 const R1 = styled.section`
 	background-image: url("/course.png");
-	height: 75vh;
+	height: 400px;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -29,7 +29,7 @@ const R2 = styled.section`
 `;
 
 const R3 = styled.section`
-	height: 25vh;
+	height: 200px;
 	background-color: #468845;
 	display: flex !important;
 	flex-direction: column;
@@ -37,16 +37,6 @@ const R3 = styled.section`
 	justify-content: center;
 `;
 
-const R4 = styled.section`
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	height: 40vh;
-	margin: 0 20px 0 20px;
-
-`;
 
 const R5 = styled.section`
 	display: flex;
@@ -58,7 +48,7 @@ const R5 = styled.section`
 const ImgName = styled.h3`
 	font-family: "Raleway";
 	float: right;
-	padding-right: 218px;
+	
 	margin-bottom: 0;
 	font-size: 20px;
 `;
@@ -145,39 +135,38 @@ function Home() {
 							<div dangerouslySetInnerHTML={{ __html: "{" }} />
 						</Bracket1>
 
-							<SubTitle>What's ExCode:</SubTitle>
-							<div>
-								<Paragraph>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Consequuntur corrupti,
-									ducimus, qui iste incidunt perspiciatis
-									saepe asperiores commodi magni beatae quis
-									odit dicta blanditiis officiis recusandae id
-									assumenda! Unde, dignissimos?
-								</Paragraph>
-							</div>
-
-					<SubTitle>Why Apply:</SubTitle>
-					<Paragraph>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequuntur corrupti, ducimus, qui iste incidunt
-						perspiciatis saepe asperiores commodi magni beatae quis
-						odit dicta blanditiis officiis recusandae id assumenda!
-						Unde, dignissimos?
-					</Paragraph>
-
-					<BracketLanding1>
+						<SubTitle>What's ExCode:</SubTitle>
 						<div>
-							<SubTitle>For Whom:</SubTitle>
 							<Paragraph>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Consequuntur corrupti,
-								ducimus, qui iste incidunt perspiciatis saepe
-								asperiores commodi magni beatae quis odit dicta
-								blanditiis officiis recusandae id assumenda!
-								Unde, dignissimos?
+								ducimus, qui iste incidunt perspiciatis
+								saepe asperiores commodi magni beatae quis
+								odit dicta blanditiis officiis recusandae id									assumenda! Unde, dignissimos?
 							</Paragraph>
 						</div>
+
+						<SubTitle>Why Apply:</SubTitle>
+						<Paragraph>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Consequuntur corrupti, ducimus, qui iste incidunt
+							perspiciatis saepe asperiores commodi magni beatae quis
+							odit dicta blanditiis officiis recusandae id assumenda!
+							Unde, dignissimos?
+						</Paragraph>
+
+						<BracketLanding1>
+							<div>
+								<SubTitle>For Whom:</SubTitle>
+								<Paragraph>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Consequuntur corrupti,
+									ducimus, qui iste incidunt perspiciatis saepe
+									asperiores commodi magni beatae quis odit dicta
+									blanditiis officiis recusandae id assumenda!
+									Unde, dignissimos?
+								</Paragraph>
+							</div>
 						<Bracket2>
 							<div dangerouslySetInnerHTML={{ __html: "}" }} />
 						</Bracket2>
@@ -186,45 +175,45 @@ function Home() {
 			</R2>
 
 			<div className='container-fluid'>
-			<R3 className="row">
-				<JoinBanner>
-					<Signup>Want to join the Bootcamp?</Signup>
-					<NavLink to="/program">
-						<Button
-							className="program-button"
-							variant="outline-success"
-							href="/program"
-							size="lg"
-						>
-							Program
-						</Button>
-					</NavLink>
-				</JoinBanner>
-			</R3>
+				<R3 className="row">
+					<JoinBanner>
+						<Signup>Want to join the Bootcamp?</Signup>
+						<NavLink to="/program">
+							<Button
+								className="program-button"
+								variant="outline-success"
+								href="/program"
+								size="lg"
+							>
+								Program
+							</Button>
+						</NavLink>
+					</JoinBanner>
+				</R3>
 			</div>
 		
 			<div className='container-fluid'>
 				<div className='row'>
-				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<ImgName>Zachary Dive</ImgName>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<ImgName>Zachary Dive</ImgName>
+						<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
 				</div>
 				<div className="col-sm">
 					<SubParagraph>
@@ -235,53 +224,53 @@ function Home() {
 						sunt reprehenderit? *\
 					</SubParagraph>
 					<ImgName>Zachary Dive</ImgName>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
-				</div>
-				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<div className='container-fluid'>
-					<div className='row'>
-						<div className='col-md'>
-						<img
-						src="/profile-pic.jpg"
-						alt="Quoter pic"
-						style={{
-							height: 50,
-							width: 50,
-							border: 1,
-							borderRadius: 50,
-						}}
-					/>
+						<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
+					</div>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='container-fluid'>
+							<div className='row'>
+								<div className='col-md'>
+									<img
+										src="/profile-pic.jpg"
+										alt="Quoter pic"
+										style={{
+										height: 50,
+										width: 50,
+										border: 1,
+										borderRadius: 50,
+										}}
+									/>
+								</div>
+								<div className='col-md'>
+									<div className='row' style={{width: "353px"}}>
+										<ImgName>Zachary Dive</ImgName>
+									</div>
+									<div className='row' style={{width: "353px"}}>
+										<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div className='col-md'>
-							<div className='row' style={{width: "353px"}}>
-					<ImgName>Zachary Dive</ImgName>
-					</div>
-					<div className='row' style={{width: "353px"}}>
-					<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-					</div>
-					</div>
 					</div>
 				</div>
-				</div>
-				</div>
-				</div>
+			</div>
 			
 
 			<R5 className="row-landing-sec5">
