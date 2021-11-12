@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import TypeWriter from 'react-typewriter';
 
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
@@ -131,7 +132,7 @@ function Home() {
 			<R1 className="container-fluid">
 				<div className='row'>
 				<div style={{textAlign: 'center', fontSize: '2vw'}}>
-					<Title>The &lt;Leading&gt; Student Run</Title>
+					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
 						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.

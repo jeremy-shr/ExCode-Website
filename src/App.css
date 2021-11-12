@@ -4,8 +4,6 @@
 	text-align: center;
 }
 
-
-
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
@@ -70,17 +68,8 @@
 	padding-left: 50px;
 }
 
-.container-fluid {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-}
 
-.container {
-	display: flex;
-	justify-content: center;
-}
+
 
 .footLink {
   color: black
