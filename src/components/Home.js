@@ -6,12 +6,12 @@ import styled from "styled-components";
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 53px;
+	font-size: 2vw;
 `;
 
 const R1 = styled.section`
 	background-image: url("/course.png");
-	height: 600px;
+	height: 75vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -20,17 +20,16 @@ const R1 = styled.section`
 `;
 
 const R2 = styled.section`
-	height: 950px;
+	width: 100%;
 	display: flex !important;
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	margin: 5vw 0 5vw 0;
 `;
 
 const R3 = styled.section`
-	height: 250px;
+	height: 25vh;
 	background-color: #468845;
 	display: flex !important;
 	flex-direction: column;
@@ -44,7 +43,7 @@ const R4 = styled.section`
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 400px;
+	height: 40vh;
 	margin: 0 20px 0 20px;
 
 `;
@@ -87,63 +86,65 @@ const BracketLanding1 = styled.div`
 const Signup = styled.h2`
 	color: #fff;
 	font-family: "Ubuntu";
-	font-size: 50px;
+	font-size: 2vw;
 	font-weight: bold;
 `;
 
 const Paragraph = styled.p`
-	font-size: 20px;
-	margin-bottom: 75px;
+	font-size: 1vw;
+	margin-bottom: 2vw;
 	text-align: justify;
 `;
 
 const SubTitle = styled.h2`
 	color: #62b22f;
-	font-size: 60px;
+	font-size: 2.5vw;
 	font-family: "Ubuntu", sans-serif;
 `;
 
 const Bracket1 = styled.h1`
 	color: #62b22f;
-	font-size: 170px;
+	font-size: 5vw;
 	font-family: "Ubuntu", sans-serif;
 	position: absolute;
-	left: 175px;
-
-	div {
-		position: absolute;
-		bottom: -180px;
-	}
+	left: 10vw;
 `;
 
 const Bracket2 = styled.h1`
 	color: #62b22f;
-	font-size: 150px;
+	font-size: 5vw;
 	font-family: "Ubuntu", sans-serif;
 	position: absolute;
-	right: 175px;
+	right: 10vw;
+`;
+
+const JoinBanner = styled.div`
+	display: flex;
+	align-items: center;
+    flex-direction: column;
 `;
 
 function Home() {
 	return (
 		<>
-			<R1 className="row-landing-sec1">
-				<div className="col-md-6">
+			<R1 className="container-fluid">
+				<div className='row'>
+				<div style={{textAlign: 'center', fontSize: '2vw'}}>
 					<Title>The &lt;Leading&gt; Student Run</Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
 						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
 					</Paragraph>
 				</div>
+				</div>
 			</R1>
 
-			<R2 className="row-landing-sec2">
-				<div style={{ paddingLeft: "250px", paddingRight: "250px" }}>
-					<BracketLanding1>
+			<R2 className="container-fluid">
+				<div className="col" style={{ paddingLeft: "15vw", paddingRight: "15vw" }}>
 						<Bracket1>
 							<div dangerouslySetInnerHTML={{ __html: "{" }} />
 						</Bracket1>
-						<div>
+
 							<SubTitle>What's ExCode:</SubTitle>
 							<div>
 								<Paragraph>
@@ -155,8 +156,6 @@ function Home() {
 									assumenda! Unde, dignissimos?
 								</Paragraph>
 							</div>
-						</div>
-					</BracketLanding1>
 
 					<SubTitle>Why Apply:</SubTitle>
 					<Paragraph>
@@ -186,8 +185,9 @@ function Home() {
 				</div>
 			</R2>
 
-			<R3 className="row-landing-sec3">
-				<div>
+			<div className='container-fluid'>
+			<R3 className="row">
+				<JoinBanner>
 					<Signup>Want to join the Bootcamp?</Signup>
 					<NavLink to="/program">
 						<Button
@@ -199,9 +199,9 @@ function Home() {
 							Program
 						</Button>
 					</NavLink>
-				</div>
+				</JoinBanner>
 			</R3>
-
+			</div>
 		
 			<div className='container-fluid'>
 				<div className='row'>
@@ -290,7 +290,7 @@ function Home() {
 					style={{
 						fontFamily: "Raleway",
 						fontWeight: 400,
-						fontSize: 25,
+						fontSize: '2.5vw',
 						paddingLeft: 25,
 					}}
 				>
