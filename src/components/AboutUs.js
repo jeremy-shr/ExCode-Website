@@ -11,11 +11,22 @@ const SubTitle = styled.h2`
 	font-size: 48px;
 `;
 
+const ImageContain = styled.div`
+	padding: 50px;
+`;
+
+const TitleContain = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 50px;
+`;
+
 function AboutUs() {
 	return (
 		<>
 			<div className="container-fluid">
-				<div className="container">
+				<ImageContain className="container">
 					<img
 						src="profile-pic.jpg"
 						alt="About Pic"
@@ -25,15 +36,8 @@ function AboutUs() {
 							width: 350,
 						}}
 					/>
-				</div>
-				<div
-					className="container"
-					style={{
-						display: "flex",
-						flexDirection: "column",
-						alignItems: "flex-start",
-					}}
-				>
+				</ImageContain>
+				<TitleContain className="container">
 					<Title>
 						The <strong>EX</strong>Code Mission
 					</Title>
@@ -44,7 +48,7 @@ function AboutUs() {
 						sapiente dignissimos nobis totam consequatur nam
 						recusandae vero?
 					</p>
-				</div>
+				</TitleContain>
 			</div>
 			<div
 				className="container-fluid"
