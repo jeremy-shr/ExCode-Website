@@ -298,7 +298,7 @@ function Home() {
 			
 
 			<R5 className="row-landing-sec5">
-				<SubTitle>&lt;Have any questions?&gt;</SubTitle>
+				<SubTitle><TypeWriter typing={0.2}><span style={{color: "#62b22f" }}>&lt;Have any questions?&gt;</span></TypeWriter></SubTitle>
 				<p
 					style={{
 						fontFamily: "Raleway",
@@ -307,7 +307,7 @@ function Home() {
 						paddingLeft: 25,
 					}}
 				>
-					Visit the FAQ and learn more about our program!
+					Visit the FAQ and learn more about our bootcamp!
 				</p>
 				<NavLink to="/faq">
 					<Button
