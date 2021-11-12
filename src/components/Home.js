@@ -2,11 +2,12 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import TypeWriter from 'react-typewriter';
 
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 20px;
+	font-size: 50px;
 `;
 
 const R1 = styled.section`
@@ -81,9 +82,8 @@ const Signup = styled.h2`
 `;
 
 const Paragraph = styled.p`
-	font-size: 1vw;
+	font-size: 20px;
 	margin-bottom: 2vw;
-	text-align: justify;
 `;
 
 const SubTitle = styled.h2`
@@ -114,13 +114,19 @@ const JoinBanner = styled.div`
     flex-direction: column;
 `;
 
+const Comments = styled.div`
+	display: flex;
+	place-content: center;
+`;
+
+
 function Home() {
 	return (
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
 				<div style={{textAlign: 'center', fontSize: '2vw'}}>
-					<Title>The &lt;Leading&gt; Student Run</Title>
+					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
 					<Title>Coding Bootcamp In The UK</Title>
 					<Paragraph>
 						Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
@@ -192,39 +198,18 @@ function Home() {
 				</R3>
 			</div>
 		
-			<div className='container-fluid'>
+			<Comments className='container-fluid' style={{margin: '80px 0px 80px 0px'}}>
 				<div className='row'>
-					<div className="col-sm">
-						<SubParagraph>
-							/* Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Aut repellendus tempore ducimus consectetur
-							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-							voluptatibus excepturi eligendi molestiae laboriosam
-							sunt reprehenderit? *\
-						</SubParagraph>
-						<ImgName>Zachary Dive</ImgName>
-						<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-							<img
-								src="/profile-pic.jpg"
-								alt="Quoter pic"
-								style={{
-								height: 50,
-								width: 50,
-								border: 1,
-								borderRadius: 50,
-								}}
-							/>
-				</div>
 				<div className="col-sm">
-					<SubParagraph>
-						/* Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Aut repellendus tempore ducimus consectetur
-						deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-						voluptatibus excepturi eligendi molestiae laboriosam
-						sunt reprehenderit? *\
-					</SubParagraph>
-					<ImgName>Zachary Dive</ImgName>
-						<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
 							<img
 								src="/profile-pic.jpg"
 								alt="Quoter pic"
@@ -235,42 +220,81 @@ function Home() {
 								borderRadius: 50,
 								}}
 							/>
-					</div>
-					<div className="col-sm">
-						<SubParagraph>
-							/* Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Aut repellendus tempore ducimus consectetur
-							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
-							voluptatibus excepturi eligendi molestiae laboriosam
-							sunt reprehenderit? *\
-						</SubParagraph>
-						<div className='container-fluid'>
-							<div className='row'>
-								<div className='col-md'>
-									<img
-										src="/profile-pic.jpg"
-										alt="Quoter pic"
-										style={{
-										height: 50,
-										width: 50,
-										border: 1,
-										borderRadius: 50,
-										}}
-									/>
-								</div>
-								<div className='col-md'>
-									<div className='row' style={{width: "353px"}}>
-										<ImgName>Zachary Dive</ImgName>
-									</div>
-									<div className='row' style={{width: "353px"}}>
-										<ImgSubName>Co-Founder of Mint.io</ImgSubName>
-									</div>
-								</div>
+						</div>
+						<div className='col'>
+							<div className='row' style={{width: "353px"}}>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
 							</div>
 						</div>
 					</div>
+					</div>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
+						</div>
+						<div className='col'>
+							<div className='row' style={{width: "353px"}}>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div className="col-sm">
+						<SubParagraph>
+							/* Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aut repellendus tempore ducimus consectetur
+							deleniti. Rerum quidem quod quam in natus ipsam ex, unde
+							voluptatibus excepturi eligendi molestiae laboriosam
+							sunt reprehenderit? *\
+						</SubParagraph>
+						<div className='row'>
+						<div className='col'>
+							<img
+								src="/profile-pic.jpg"
+								alt="Quoter pic"
+								style={{
+								height: 50,
+								width: 50,
+								border: 1,
+								borderRadius: 50,
+								}}
+							/>
+						</div>
+						<div className='col'>
+							<div className='row' style={{width: "353px"}}>
+								<ImgName>Zachary Dive</ImgName>
+							</div>
+							<div className='row' style={{width: "353px"}}>
+								<ImgSubName>Co-Founder of Mint.io</ImgSubName>
+							</div>
+						</div>
+					</div>
+					</div>
 				</div>
-			</div>
+			</Comments>
 			
 
 			<R5 className="row-landing-sec5">
