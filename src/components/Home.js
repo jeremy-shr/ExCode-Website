@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import TypeWriter from 'react-typewriter';
 
+
 const Title = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
@@ -125,6 +126,7 @@ function Home() {
 		<>
 			<R1 className="container-fluid">
 				<div className='row'>
+<<<<<<< HEAD
 					<div style={{textAlign: 'center', fontSize: '2vw'}}>
 						<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
 						<Title>Coding Bootcamp In The UK</Title>
@@ -132,6 +134,15 @@ function Home() {
 							Learn how to code from scratch! Our course will currently teach you how to code (no programming experience experience needed) in only 8 weeks.
 						</Paragraph>
 					</div>
+=======
+				<div style={{textAlign: 'center', fontSize: '2vw'}}>
+					<Title> The <TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;Leading&gt;</span></TypeWriter> Student Run </Title>
+					<Title>Coding Bootcamp In The UK</Title>
+					<Paragraph>
+						Learn how to code from scratch and receive a certificate qualifying you in Python!
+					</Paragraph>
+				</div>
+>>>>>>> f777f1b88f22ed0ff857f17011dd3ae6f768a08a
 				</div>
 			</R1>
 
@@ -144,33 +155,22 @@ function Home() {
 						<SubTitle>What's ExCode:</SubTitle>
 						<div>
 							<Paragraph>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Consequuntur corrupti,
-								ducimus, qui iste incidunt perspiciatis
-								saepe asperiores commodi magni beatae quis
-								odit dicta blanditiis officiis recusandae id									assumenda! Unde, dignissimos?
+							ExCode is an 8-week  bi-termly coding bootcamp run entirely by students at the University of Exeter.  It is taught every Tuesday at 18:30 in the Forum Auditorium, by a lead professor and a team of the best teaching assistants on campus. Classes are an hour long, with a 30minute lecture followed by 30minutes of practice questions in the Forum Labs. This will give you a chance to learn to code in a friendly and supporting environment, after your day of lectures.
+										
+																	
 							</Paragraph>
 						</div>
 
 						<SubTitle>Why Apply:</SubTitle>
 						<Paragraph>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Consequuntur corrupti, ducimus, qui iste incidunt
-							perspiciatis saepe asperiores commodi magni beatae quis
-							odit dicta blanditiis officiis recusandae id assumenda!
-							Unde, dignissimos?
+						ExCode is currently teaching the fundamentals of Python, which is a great programming language to start with.  Python can be used to build simple programs, the backbone of a website and has a very intuitive syntax for beginners. Therefore if you have never coded and want to give it a try, ExCode is the place to learn!
 						</Paragraph>
 
 						<BracketLanding1>
 							<div>
 								<SubTitle>For Whom:</SubTitle>
 								<Paragraph>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Consequuntur corrupti,
-									ducimus, qui iste incidunt perspiciatis saepe
-									asperiores commodi magni beatae quis odit dicta
-									blanditiis officiis recusandae id assumenda!
-									Unde, dignissimos?
+								If you are a student at the University of Exeter, you are welcome to apply for our next bootcamp. No prior programming experience is needed as the aim of the bootcamp is to foster the fundamental coding skills to begin your journey, and start writing your own programs! We encourage anyone who is not currently studying computer science to join.
 								</Paragraph>
 							</div>
 						<Bracket2>

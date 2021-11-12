@@ -68,17 +68,10 @@
 	padding-left: 50px;
 }
 
-
-
-
 .footLink {
-  color: black
-	
+	color: black;
 }
 
 .footLink:hover {
-  color: #62b22f;
-	
+	color: #62b22f;
 }
-
-
