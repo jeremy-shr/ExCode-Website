@@ -1,0 +1,19 @@
+.d-block {
+	display: block !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.w-50 {
+	width: 50% !important;
+}
+
+.jxElaB h3 {
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 120%;
+}
