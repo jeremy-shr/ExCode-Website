@@ -227,7 +227,7 @@ function About() {
 							<Carousel.Caption>
 								<h3>Opportunity</h3>
 								<p className="carousel-text">
-									placeholder text
+								The bootcamp continues to be completely free, to ensure anyone at the University of Exeter is able to learn to code no matter their financial situation
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -242,7 +242,8 @@ function About() {
 							<Carousel.Caption>
 								<h3>Multidisciplinary</h3>
 								<p className="carousel-text">
-									Placeholder text
+									
+We believe that the ability to program is a fundamental skill in the modern day world, so no matter what academic background you have you can apply
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
