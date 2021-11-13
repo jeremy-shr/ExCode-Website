@@ -9,7 +9,6 @@ import Navbar from "./components/Nav/Navbar";
 import RightNavbar from "./components/Nav/RightNav";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
-import AboutUs from "./components/AboutUs";
 import Program from "./components/Program";
 
 function App() {
@@ -24,9 +23,9 @@ function App() {
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/program" element={<Program />} />
 				<Route exact path="/about" element={<About />} />
-				<Route exact path="/aboutus" element={<AboutUs />} />
 				<Route exact path="/faq" element={<Faq />} />
 			</Routes>
+			<Footer/>
 		</>
 	);
 }
