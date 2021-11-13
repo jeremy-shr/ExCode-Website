@@ -6,13 +6,14 @@ import "./AboutUs.css";
 
 const Title = styled.h1`
 	font-family: "Ubuntu", sans-serif;
-	font-size: 60px;
+	font-size: 4.375vw;
+	font-weight: 600;
 `;
 
 const SubTitle = styled.h2`
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 900;
-	font-size: 52px;
+	font-size: 3.61vw;
 	margin-left: 147px;
 	margin-top: 120px;
 	color: #62b22f;
@@ -27,12 +28,16 @@ const TitleContain = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 50px;
+
+	p {
+		font-size: 1.15vw;
+	}
 `;
 
 const BackgroundImageContainer = styled.div`
 	background-image: url("/carouselBackground.png");
 	background-size: cover;
-	height: 1000px;
+	height: 69vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -40,7 +45,7 @@ const BackgroundImageContainer = styled.div`
 	h2 {
 		position: relative;
 		color: #62b22f;
-		font-size: 52px;
+		font-size: 3.6vw;
 	}
 `;
 
@@ -57,26 +62,26 @@ const GreenBox = styled.div`
 	flex-direction: column;
 	align-items: center;
 	background-color: #468845;
-	height: 800px;
-	width: 1000px;
-	margin-top: 100px;
-	margin-right: 50px;
-	margin-bottom: 100px;
+	height: 100vh;
+	width: 69vw;
+	margin-top: 13.7vh;
+	margin-right: 3.4vw;
+	margin-bottom: 13.7vh;
 
 	h3 {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
-		font-size: 40px;
+		font-size: 2.7vw;
 		font-weight: 600;
 		color: #fff;
-		margin-bottom: 70%;
+		margin-bottom: 90%;
 	}
 
 	p {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
-		font-size: 20px;
-		margin-bottom: -10%;
+		font-size: 1.38vw;
+		margin-bottom: 60%;
 	}
 `;
 
@@ -98,17 +103,17 @@ const TeamContainer1 = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 50px;
+		margin-top: 6.8vh;
 		font-family: "Ubuntu";
 		font-weight: 600;
 	}
 
 	h4 {
-		margin-top: 20px;
+		margin-top: 2.7vh;
 	}
 
 	h5 {
-		font-size: 18px;
+		font-size: 1.25vw;
 		color: grey;
 	}
 `;
@@ -124,18 +129,18 @@ const TeamContainer2 = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 50px;
-		margin-bottom: 120px;
+		margin-top: 6.8vh;
+		margin-bottom: 16.4vh;
 		font-family: "Ubuntu";
 		font-weight: 600;
 	}
 
 	h4 {
-		margin-top: 20px;
+		margin-top: 2.7vh;
 	}
 
 	h5 {
-		font-size: 18px;
+		font-size: 1.25vw;
 		color: grey;
 	}
 `;
@@ -149,26 +154,28 @@ function About() {
 						src="profile-pic.jpg"
 						alt="About Pic"
 						style={{
-							borderRadius: 300,
-							height: 350,
-							width: 350,
+							borderRadius: 500,
+							maxWidth: "350px",
+							width: "100%",
+							height: "auto",
 							marginLeft: "22%",
 							marginBottom: "50%",
 						}}
 					/>
 				</ImageContain>
-				<TitleContain className="container">
-					<Title>
-						The
-						<br />
-					</Title>
-					<img
-						src="/excode.png"
-						alt="Brand Logo"
-						style={{ height: 90, width: 430 }}
-					/>
-					<Title>Mission</Title>
-					<p style={{ width: "500" }}>
+				<TitleContain className="container-fluid">
+					<div className="container">
+						<Title>
+							The
+							<br />
+						</Title>
+						<img
+							src="/excode.png"
+							alt="Brand Logo"
+							style={{ height: "10.9vw", width: "26.3vw" }}
+						/>
+						<Title>Mission</Title>
+						<p style={{ width: "500" }}>
 						Initially founded in 2016, as an after-school coding
 						workshop, ExCode’s growth has been unprecedented, with
 						the vision to be able to give any university student
@@ -202,6 +209,7 @@ function About() {
 						of Exeter to help foster core programming concepts
 						across all the academic colleges.
 					</p>
+					</div>
 				</TitleContain>
 			</FirstContainer>
 			<BackgroundImageContainer className="container-fluid">
@@ -216,7 +224,7 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_pair_programming.svg"
 								alt="First slide"
-								style={{ height: 500 }}
+								style={{ height: "68.5vw" }}
 							/>
 							<Carousel.Caption>
 								<h3>Equality</h3>
@@ -233,13 +241,16 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_code_typing.svg"
 								alt="Second slide"
-								style={{ height: 500 }}
+								style={{ height: "68.5vw" }}
 							/>
 
 							<Carousel.Caption>
 								<h3>Opportunity</h3>
 								<p className="carousel-text">
-								The bootcamp continues to be completely free, to ensure anyone at the University of Exeter is able to learn to code no matter their financial situation
+									The bootcamp continues to be completely
+									free, to ensure anyone at the University of
+									Exeter is able to learn to code no matter
+									their financial situation
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -248,14 +259,16 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_source_code.svg"
 								alt="Third slide"
-								style={{ height: 500 }}
+								style={{ height: "68.5vw" }}
 							/>
 
 							<Carousel.Caption>
 								<h3>Multidisciplinary</h3>
 								<p className="carousel-text">
-									
-We believe that the ability to program is a fundamental skill in the modern day world, so no matter what academic background you have you can apply
+									We believe that the ability to program is a
+									fundamental skill in the modern day world,
+									so no matter what academic background you
+									have you can apply
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -272,7 +285,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>Martin Brett</h4>
 					<h5>Lead Proffesor</h5>
@@ -282,7 +294,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -292,7 +303,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -302,7 +312,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -315,7 +324,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -325,7 +333,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -335,7 +342,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
@@ -345,7 +351,6 @@ We believe that the ability to program is a fundamental skill in the modern day 
 						src="/joseph-gonzalez-pic.jpg"
 						alt="Team Member"
 						className="imgStyling"
-						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
