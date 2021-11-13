@@ -137,6 +137,7 @@ function Program() {
 						<Left className='row'>
 								<Viikot>
 									<BoxH1>Week 1</BoxH1>
+									<BoxH1></BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>
