@@ -21,20 +21,93 @@ const TreeContainer = styled.div`
 `;
 
 const TreeImage = styled.img`
-	width: 65vw;
+	height: 2036px;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	  }
 `;
 
-const LeftBox = styled.div`
-	margin: 100px 0px 100px 0px;
-`;
-const RightBox = styled.div`
-	margin: 100px 0px 100px 0px;
-`;
-const Box = styled.div`
+const ViikotLeft = styled.div` 
 	display: flex;
-	justify-content: center;
-	height: 100%;
+    justify-content: flex-end;
+	width: 295px;
+	height: 225px;
+	margin-top: 0px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #468845;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 175%;
+	font-weight: 400;
+	text-align: center;
+	background-color: white;
+	z-index: 3;
 `;
+
+const Viikot = styled.div` 
+	width: 295px;
+	height: 225px;
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #468845;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 175%;
+    font-weight: 400;
+    text-align: center;
+	background-color: white;
+	z-index: 3;
+`;
+
+const Box = styled.div`
+display: block;
+padding-top: 100px;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+`;
+
+const Structure = styled.div`
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+`;
+
+
+const Right = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Left = styled.div`
+	padding-left: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
+`;
+
+
 
 function Program() {
 	return (
@@ -52,40 +125,57 @@ function Program() {
 			</Banner>
 			<TreeContainer className='container-fluid'>
 				<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-					<TreeImage src='./Tree.png'>
-					</TreeImage>
-					<Box className='container'>
-						<div className='row'>
-							<div className='col-md-6'>
-								<LeftBox className='row' >
-									<div>Hello1</div>
-								</LeftBox>
-								<LeftBox className='row'>
-									<div>Hello1</div>
-								</LeftBox>
-								<LeftBox className='row'>
-									<div>Hello1</div>
-								</LeftBox>
-								<LeftBox className='row'>
-									<div>Hello1</div>
-								</LeftBox>
-								<LeftBox className='row'>
-									<div>Hello1</div>
-								</LeftBox>
-								<RightBox className='row'>
-									<div>Hello2</div>
-								</RightBox>
-								<RightBox className='row'>
-									<div>Hello2</div>
-								</RightBox>
-								<RightBox className='row'>
-									<div>Hello2</div>
-								</RightBox>
-								<RightBox className='row'>
-									<div>Hello2</div>
-								</RightBox>
+					<Box className='container-fluid'>
+						<Structure>
+						<Left className='row'>
+								<Viikot>
+									Yo
+								</Viikot>
+							</Left>
+							<Right className='row'>
+								<ViikotLeft>
+									Yo
+								</ViikotLeft>
+							</Right>
+							<Left className='row'>
+								<Viikot>
+									Yo
+								</Viikot>
+							</Left>
+							<Right className='row'>
+								<ViikotLeft>
+									Yo
+								</ViikotLeft>
+							</Right>
+							<Left className='row'>
+								<Viikot>
+									Yo
+								</Viikot>
+							</Left>
+							<Right className='row'>
+								<ViikotLeft>
+									Yo
+								</ViikotLeft>
+							</Right>
+							<Left className='row'>
+								<Viikot>
+									Yo
+								</Viikot>
+							</Left>
+							<Right className='row'>
+								<ViikotLeft>
+									Yo
+								</ViikotLeft>
+							</Right>
+							<Left className='row'>
+								<Viikot>
+									Yo
+								</Viikot>
+							</Left>
+							<div style={{display: "flex", position: "absolute", width: "99%", height: '2100px', justifyContent: "center"}}>
+							<TreeImage src='Tree.png' height='2033px' />
 							</div>
-						</div>
+						</Structure>
 					</Box>
 				</div>
 			</TreeContainer>
