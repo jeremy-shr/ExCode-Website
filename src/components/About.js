@@ -153,7 +153,7 @@ function About() {
 							height: 350,
 							width: 350,
 							marginLeft: "22%",
-							marginBottom: "5%",
+							marginBottom: "50%",
 						}}
 					/>
 				</ImageContain>
@@ -173,17 +173,29 @@ function About() {
 						workshop, ExCode’s growth has been unprecedented, with
 						the vision to be able to give any university student
 						access to the resources and teaching needed to be able
-						to learn to code. The potential was clear so through the
+						to learn to code. 
+					</p>
+
+					<p style={{ width: "500" }}>	
+						The potential was clear so through the
 						Exeter Entrepreneurs community backing, rising
 						popularity and belief in the project, ExCode is now
 						recognised as the leading student-run coding bootcamp in
-						the UK. We are fully aware that the majority of coding
+						the UK. 
+					</p>
+						
+					<p style={{ width: "500" }}>
+						We are fully aware that the majority of coding
 						bootcamps and computer-science degree programs come with
 						massive financial paywalls, therefore we are committed
 						to being completely FREE to ensure anyone can enroll in
 						our bootcamp. This is thanks to our many sponsors who
 						continue to support the programs and believe in our
-						mission. We are currently partnered with the Exeter
+						mission.
+						</p>
+					
+				    <p style={{ width: "500" }}>
+						We are currently partnered with the Exeter
 						Artificial Intelligence society (X-AI) to deliver our
 						course fully in Python, the most accessible programming
 						language for learners and are backed by the University
@@ -227,7 +239,7 @@ function About() {
 							<Carousel.Caption>
 								<h3>Opportunity</h3>
 								<p className="carousel-text">
-									placeholder text
+								The bootcamp continues to be completely free, to ensure anyone at the University of Exeter is able to learn to code no matter their financial situation
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -242,7 +254,8 @@ function About() {
 							<Carousel.Caption>
 								<h3>Multidisciplinary</h3>
 								<p className="carousel-text">
-									Placeholder text
+									
+We believe that the ability to program is a fundamental skill in the modern day world, so no matter what academic background you have you can apply
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -272,7 +285,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -282,7 +295,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -292,7 +305,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 			</TeamContainer1>
 
@@ -305,7 +318,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -315,7 +328,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -325,7 +338,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -335,7 +348,7 @@ function About() {
 						style={{ borderRadius: 300 }}
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 			</TeamContainer2>
 		</>
