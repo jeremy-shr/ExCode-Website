@@ -159,7 +159,7 @@ function About() {
 							width: "100%",
 							height: "auto",
 							marginLeft: "22%",
-							marginBottom: "5%",
+							marginBottom: "50%",
 						}}
 					/>
 				</ImageContain>
@@ -237,7 +237,10 @@ function About() {
 							<Carousel.Caption>
 								<h3>Opportunity</h3>
 								<p className="carousel-text">
-									placeholder text
+									The bootcamp continues to be completely
+									free, to ensure anyone at the University of
+									Exeter is able to learn to code no matter
+									their financial situation
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -252,7 +255,10 @@ function About() {
 							<Carousel.Caption>
 								<h3>Multidisciplinary</h3>
 								<p className="carousel-text">
-									Placeholder text
+									We believe that the ability to program is a
+									fundamental skill in the modern day world,
+									so no matter what academic background you
+									have you can apply
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -280,7 +286,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -289,7 +295,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -298,7 +304,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 			</TeamContainer1>
 
@@ -310,7 +316,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -319,7 +325,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -328,7 +334,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 				<div>
 					<img
@@ -337,7 +343,7 @@ function About() {
 						className="imgStyling"
 					/>
 					<h4>My Name</h4>
-					<h5>Teacher Assitant</h5>
+					<h5>Teacher Assistant</h5>
 				</div>
 			</TeamContainer2>
 		</>
