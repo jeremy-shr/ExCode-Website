@@ -10,7 +10,7 @@ const Ul = styled.ul`
     justify-content: center;
     align-items: center;
     flex-direction: column !important;
-    z-index: 1;
+    z-index: 10;
 
     NavLink {
         padding: 18px 10px;

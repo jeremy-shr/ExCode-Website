@@ -30,7 +30,7 @@ const TreeImage = styled.img`
 
 const ViikotLeft = styled.div` 
 	display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 	width: 295px;
 	height: 225px;
 	margin-top: 0px;
