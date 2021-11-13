@@ -75,3 +75,9 @@
 .footLink:hover {
 	color: #62b22f;
 }
+
+.imgStyling {
+	height: 180px;
+	width: 180px;
+	border: 5px solid #62b22f;
+}
