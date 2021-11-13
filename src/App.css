@@ -83,3 +83,18 @@
 	width: 12.5vw;
 	border: 5px solid #62b22f;
 }
+
+.rightNavbarflex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.rightNavbarflex h3{
+	padding-top: 7%;
+	font-size: 3vw;
+	display: none;
+}
+
+
+

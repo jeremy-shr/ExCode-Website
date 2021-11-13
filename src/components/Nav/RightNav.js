@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NavLink } from "react-router-dom";
 import Burger from "./Burger";
 
@@ -16,6 +16,16 @@ const Ul = styled.ul`
         padding: 18px 10px;
     }
 
+    & span{
+        transition: 1s;
+      }
+
+
+    & span:hover {
+        font-size: 7vw;
+    }
+  
+   
     @media {
         flex-flow: column nowrap;
         display: flex;
@@ -41,22 +51,26 @@ function RightNavbar({open}) {
 
     return (
         <Ul open={open}>
+            <div className="rightNavbarflex">
+            <h3>&lt;</h3>
              <NavLink
             to={'/'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                Home
+                <span>Home </span>
             </NavLink>
+            <h3>&gt;</h3>
+            </div>
             <NavLink
             to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                About Us
+               <span> About Us </span>
             </NavLink>
             <NavLink
             to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                Program
+               <span> Program </span>
             </NavLink>
             
             <NavLink
             to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                FAQ
+                <span> FAQ </span>
             </NavLink>
         </Ul>
     )
