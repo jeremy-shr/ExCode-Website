@@ -45,6 +45,7 @@ const R5 = styled.section`
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-left: 84px;
+	margin-bottom: 16.4vh;
 `;
 
 const ImgName = styled.h3`
