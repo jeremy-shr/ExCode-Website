@@ -38,7 +38,7 @@ const TreeImage = styled.img`
 
 const ViikotLeft = styled.div` 
 	display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 	width: 295px;
 	height: 225px;
 	margin-top: 0px;
@@ -53,9 +53,11 @@ const ViikotLeft = styled.div`
 	background-color: white;
 	z-index: 3;
 	justify-content:center;
+	align-items:center;
 `;
 
 const Viikot = styled.div` 
+    display:flex;
 	width: 295px;
 	height: 225px;
     margin-top: 0px;
@@ -69,6 +71,8 @@ const Viikot = styled.div`
     text-align: center;
 	background-color: white;
 	z-index: 3;
+	align-items:center;
+	justify-content:center;
 `;
 
 const Box = styled.div`
@@ -137,7 +141,7 @@ function Program() {
 						<Left className='row'>
 								<Viikot>
 									<BoxH1>Week 1</BoxH1>
-									<BoxH1></BoxH1>
+									<BoxH1>Nibbe</BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>

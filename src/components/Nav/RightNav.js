@@ -10,7 +10,7 @@ const Ul = styled.ul`
     justify-content: center;
     align-items: center;
     flex-direction: column !important;
-    z-index: 1;
+    z-index: 10;
 
     NavLink {
         padding: 18px 10px;
@@ -46,13 +46,14 @@ function RightNavbar({open}) {
                 Home
             </NavLink>
             <NavLink
-            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                Program
-            </NavLink>
-            <NavLink
             to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 About Us
             </NavLink>
+            <NavLink
+            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+                Program
+            </NavLink>
+            
             <NavLink
             to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 FAQ
