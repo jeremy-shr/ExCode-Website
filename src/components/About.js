@@ -20,7 +20,11 @@ const SubTitle = styled.h2`
 `;
 
 const ImageContain = styled.div`
-	padding: 50px;
+	padding: 40px;
+
+	@media screen and (max-width: 830px) {
+		display: none;
+	  }
 `;
 
 const TitleContain = styled.div`
@@ -32,6 +36,10 @@ const TitleContain = styled.div`
 	p {
 		font-size: 1.15vw;
 	}
+
+	@media screen and (max-width: 830px) {
+		padding: 20px;
+	  }
 `;
 
 const BackgroundImageContainer = styled.div`
@@ -149,7 +157,8 @@ function About() {
 	return (
 		<>
 			<FirstContainer className="container-fluid">
-				<ImageContain className="container">
+				<div className='row'>
+				<ImageContain className="col">
 					<img
 						src="profile-pic.jpg"
 						alt="About Pic"
@@ -165,7 +174,7 @@ function About() {
 						}}
 					/>
 				</ImageContain>
-				<TitleContain className="container-fluid">
+				<TitleContain className="col">
 					<div className="container">
 						<Title>
 							The
@@ -214,6 +223,7 @@ function About() {
 						</p>
 					</div>
 				</TitleContain>
+				</div>
 			</FirstContainer>
 			<BackgroundImageContainer className="container-fluid">
 				<div className="container">
