@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Carousel from "react-bootstrap/Carousel";
 import "./AboutUs.css";
 
@@ -17,6 +20,13 @@ const SubTitle = styled.h2`
 	margin-left: 147px;
 	margin-top: 120px;
 	color: #468845;
+`;
+
+const SubtitleContainer = styled.div`
+
+	@media screen and (max-width: 830px) {
+		display: none;
+	  }
 `;
 
 const ImageContain = styled.div`
@@ -55,6 +65,7 @@ const BackgroundImageContainer = styled.div`
 		color: #468845;
 		font-size: 3.6vw;
 	}
+
 `;
 
 const FirstContainer = styled.div`
@@ -70,12 +81,9 @@ const GreenBox = styled.div`
 	flex-direction: column;
 	align-items: center;
 	background-color: #468845;
-	height: 100vh;
-	width: 69vw;
-	margin-top: 13.7vh;
-	margin-right: 3.4vw;
-	margin-bottom: 13.7vh;
+	width: 50vw;
 
+	
 	h3 {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
@@ -91,6 +99,8 @@ const GreenBox = styled.div`
 		font-size: 1.38vw;
 		margin-bottom: 60%;
 	}
+
+
 `;
 
 const TeamTitleContainer = styled.div`
@@ -226,11 +236,11 @@ function About() {
 				</div>
 			</FirstContainer>
 			<BackgroundImageContainer className="container-fluid">
-				<div className="container">
+				<SubtitleContainer>
 					<SubTitle>&lt;Our Values&gt;</SubTitle>
-				</div>
+				</SubtitleContainer>
 
-				<GreenBox>
+				<GreenBox className="container">
 					<Carousel className="carousel-size">
 						<Carousel.Item>
 							<img
