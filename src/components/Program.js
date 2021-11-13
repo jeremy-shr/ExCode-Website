@@ -38,7 +38,6 @@ const ViikotLeft = styled.div`
 	border-width: 3px;
 	border-color: #468845;
 	border-radius: 20px;
-	color: #fff;
 	font-size: 20px;
 	line-height: 175%;
 	font-weight: 400;
@@ -55,7 +54,6 @@ const Viikot = styled.div`
     border-width: 3px;
     border-color: #468845;
     border-radius: 20px;
-    color: #fff;
     font-size: 20px;
     line-height: 175%;
     font-weight: 400;
@@ -164,7 +162,7 @@ function Program() {
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yo
+									<h1>Yo</h1>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
