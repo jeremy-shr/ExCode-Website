@@ -155,7 +155,7 @@ function About() {
 						alt="About Pic"
 						style={{
 							borderRadius: 500,
-							maxWidth: "350px",
+							maxWidth: "24.3vw",
 							width: "100%",
 							height: "auto",
 							marginLeft: "22%",
@@ -172,43 +172,44 @@ function About() {
 						<img
 							src="/excode.png"
 							alt="Brand Logo"
-							style={{ height: "10.9vw", width: "26.3vw" }}
+							style={{ height: "10.9vh", width: "26.3vw" }}
 						/>
 						<Title>Mission</Title>
 						<p style={{ width: "500" }}>
-						Initially founded in 2016, as an after-school coding
-						workshop, ExCode’s growth has been unprecedented, with
-						the vision to be able to give any university student
-						access to the resources and teaching needed to be able
-						to learn to code. 
-					</p>
-
-					<p style={{ width: "500" }}>	
-						The potential was clear so through the
-						Exeter Entrepreneurs community backing, rising
-						popularity and belief in the project, ExCode is now
-						recognised as the leading student-run coding bootcamp in
-						the UK. 
-					</p>
-						
-					<p style={{ width: "500" }}>
-						We are fully aware that the majority of coding
-						bootcamps and computer-science degree programs come with
-						massive financial paywalls, therefore we are committed
-						to being completely FREE to ensure anyone can enroll in
-						our bootcamp. This is thanks to our many sponsors who
-						continue to support the programs and believe in our
-						mission.
+							Initially founded in 2016, as an after-school coding
+							workshop, ExCode’s growth has been unprecedented,
+							with the vision to be able to give any university
+							student access to the resources and teaching needed
+							to be able to learn to code.
 						</p>
-					
-				    <p style={{ width: "500" }}>
-						We are currently partnered with the Exeter
-						Artificial Intelligence society (X-AI) to deliver our
-						course fully in Python, the most accessible programming
-						language for learners and are backed by the University
-						of Exeter to help foster core programming concepts
-						across all the academic colleges.
-					</p>
+
+						<p style={{ width: "500" }}>
+							The potential was clear so through the Exeter
+							Entrepreneurs community backing, rising popularity
+							and belief in the project, ExCode is now recognised
+							as the leading student-run coding bootcamp in the
+							UK.
+						</p>
+
+						<p style={{ width: "500" }}>
+							We are fully aware that the majority of coding
+							bootcamps and computer-science degree programs come
+							with massive financial paywalls, therefore we are
+							committed to being completely FREE to ensure anyone
+							can enroll in our bootcamp. This is thanks to our
+							many sponsors who continue to support the programs
+							and believe in our mission.
+						</p>
+
+						<p style={{ width: "500" }}>
+							We are currently partnered with the Exeter
+							Artificial Intelligence society (X-AI) to deliver
+							our course fully in Python, the most accessible
+							programming language for learners and are backed by
+							the University of Exeter to help foster core
+							programming concepts across all the academic
+							colleges.
+						</p>
 					</div>
 				</TitleContain>
 			</FirstContainer>
