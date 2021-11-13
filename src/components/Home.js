@@ -79,6 +79,10 @@ const Signup = styled.h2`
 	font-family: "Ubuntu";
 	font-size: 2vw;
 	font-weight: bold;
+
+	@media screen and (max-width: 992px) {
+		font-size: 25px;
+	  }
 `;
 
 const Paragraph = styled.p`
@@ -120,6 +124,12 @@ const Comments = styled.div`
 	display: flex;
 	place-content: center;
 `;
+
+const ColSm = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
 
 function Home() {
 	return (
@@ -225,7 +235,7 @@ function Home() {
 				style={{ margin: "80px 0px 80px 0px" }}
 			>
 				<div className="row">
-					<div className="col-sm">
+					<ColSm className="col-sm">
 						<SubParagraph>
 							/* Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Aut repellendus tempore ducimus
@@ -233,8 +243,8 @@ function Home() {
 							natus ipsam ex, unde voluptatibus excepturi eligendi
 							molestiae laboriosam sunt reprehenderit? *\
 						</SubParagraph>
-						<div className="row">
-							<div className="col">
+						<div className="row" style={{flexWrap: 'nowrap'}}>
+							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
 									src="/profile-pic.jpg"
 									alt="Quoter pic"
@@ -257,8 +267,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col-sm">
+					</ColSm>
+					<ColSm className="col-sm">
 						<SubParagraph>
 							/* Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Aut repellendus tempore ducimus
@@ -266,8 +276,8 @@ function Home() {
 							natus ipsam ex, unde voluptatibus excepturi eligendi
 							molestiae laboriosam sunt reprehenderit? *\
 						</SubParagraph>
-						<div className="row">
-							<div className="col">
+						<div className="row" style={{flexWrap: 'nowrap'}}>
+							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
 									src="/profile-pic.jpg"
 									alt="Quoter pic"
@@ -290,8 +300,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col-sm">
+					</ColSm>
+					<ColSm className="col-sm">
 						<SubParagraph>
 							/* Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Aut repellendus tempore ducimus
@@ -299,8 +309,8 @@ function Home() {
 							natus ipsam ex, unde voluptatibus excepturi eligendi
 							molestiae laboriosam sunt reprehenderit? *\
 						</SubParagraph>
-						<div className="row">
-							<div className="col">
+						<div className="row" style={{flexWrap: 'nowrap'}}>
+							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
 									src="/profile-pic.jpg"
 									alt="Quoter pic"
@@ -323,7 +333,7 @@ function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</ColSm>
 				</div>
 			</Comments>
 			<R5 className="row-landing-sec5">

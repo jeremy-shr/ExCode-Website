@@ -16,7 +16,7 @@ const SubTitle = styled.h2`
 	font-size: 3.61vw;
 	margin-left: 147px;
 	margin-top: 120px;
-	color: #62b22f;
+	color: #468845;
 `;
 
 const ImageContain = styled.div`
@@ -44,7 +44,7 @@ const BackgroundImageContainer = styled.div`
 
 	h2 {
 		position: relative;
-		color: #62b22f;
+		color: #468845;
 		font-size: 3.6vw;
 	}
 `;
