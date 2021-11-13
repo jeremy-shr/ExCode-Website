@@ -13,6 +13,13 @@ const Banner = styled.div`
 const BannerH1 = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
+	color: #62b22f;
+	font-size: 2vw;
+`;
+
+const BoxH1 = styled.h1`
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
 	font-size: 8vw;
 `;
 
@@ -112,7 +119,7 @@ const Left = styled.div`
 function Program() {
 	return (
 		<>
-			<Banner className='container-fluid'>
+			{/* <Banner className='container-fluid'>
 				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
 					Know
 				</BannerH1>
@@ -122,7 +129,7 @@ function Program() {
 				<BannerH1 className='row' style={{ marginLeft: "25vw" }}>
 					Program
 				</BannerH1>
-			</Banner>
+			</Banner> */}
 			<TreeContainer className='container-fluid'>
 				<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
 					<Box className='container-fluid'>
@@ -154,7 +161,7 @@ function Program() {
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yo
+									Yooooo
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
