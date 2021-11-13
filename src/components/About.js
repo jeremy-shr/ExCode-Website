@@ -154,13 +154,14 @@ function About() {
 						src="profile-pic.jpg"
 						alt="About Pic"
 						style={{
-							borderRadius: 500,
-							maxWidth: "24.3vw",
-							width: "100%",
+							borderRadius: "50%",
+							maxWidth: "48vh",
+							width: "25vw",
 							maxHeight: "48vh",
-							height: "100%",
+							height: "25vw",
 							marginLeft: "22%",
 							marginBottom: "50%",
+							objectFit: "cover",
 						}}
 					/>
 				</ImageContain>
