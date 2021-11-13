@@ -157,7 +157,8 @@ function About() {
 							borderRadius: 500,
 							maxWidth: "24.3vw",
 							width: "100%",
-							height: "auto",
+							maxHeight: "48vh",
+							height: "100%",
 							marginLeft: "22%",
 							marginBottom: "50%",
 						}}
