@@ -27,7 +27,7 @@ function App() {
 				<Route exact path="/aboutus" element={<AboutUs />} />
 				<Route exact path="/faq" element={<Faq />} />
 			</Routes>
-			<Footer />
+			<Footer/>
 		</>
 	);
 }

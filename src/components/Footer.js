@@ -3,9 +3,13 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const Section = styled.section `
- padding:40px !important;
+ padding:20px !important;
   border-top: 1px solid #62b22f !important;
   border-top-width: 50px;
+  
+  @media (max-height: 100px) {
+
+}
 
 `;
 
@@ -25,7 +29,6 @@ const C1 = styled.div `
 const C2 = styled.div `
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-    right: 100px ;
 
 `;
 
@@ -37,10 +40,10 @@ function Footer() {
    
     return  (
        
-            <Section>
+            <Section className='container-fluid'>
             
-                 
-                <R1 className = "row1-footer" >
+                
+                <R1 className = "row" >
                    <C1 className = "col-md-4" >
                         <NavLink  to="/">
                            <div className='logo'>
