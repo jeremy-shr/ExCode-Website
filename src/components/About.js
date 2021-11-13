@@ -158,7 +158,7 @@ function About() {
 		<>
 			<FirstContainer className="container-fluid">
 				<div className='row'>
-				<ImageContain className="col">
+				<ImageContain className="col-md-4">
 					<img
 						src="profile-pic.jpg"
 						alt="About Pic"
