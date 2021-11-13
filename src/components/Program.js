@@ -3,9 +3,8 @@ import styled from "styled-components";
 
 
 const Banner = styled.div`
-	background-image: url("course.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
+
+	margin-left: 300px;
 
 `;
 
@@ -25,6 +24,7 @@ const BoxH1 = styled.h1`
 `;
 
 const TreeContainer = styled.div`
+margin-bottom: 16.4vh;
 	
 `;
 
@@ -123,7 +123,7 @@ const Left = styled.div`
 function Program() {
 	return (
 		<>
-			{/* <Banner className='container-fluid'>
+			<Banner className='container-fluid'>
 				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
 					Know
 				</BannerH1>
@@ -133,7 +133,7 @@ function Program() {
 				<BannerH1 className='row' style={{ marginLeft: "25vw" }}>
 					Program
 				</BannerH1>
-			</Banner> */}
+			</Banner>
 			<TreeContainer className='container-fluid'>
 				<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
 					<Box className='container-fluid'>
