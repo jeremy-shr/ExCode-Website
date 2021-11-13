@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Data } from "./Data";
 import styled from "styled-components";
+import TypeWriter from 'react-typewriter';
 
 const Title = styled.h1`
 	font-family: "Ubuntu", sans-serif;
@@ -82,8 +83,8 @@ function Faq() {
     return (
         <>
             <FaqSection>
-                <Title>
-                    FAQ
+                <Title><TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;FAQ&gt;</span></TypeWriter>
+                
                 </Title>
             </FaqSection>
             <AccordionSection>
