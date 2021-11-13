@@ -174,7 +174,7 @@ function About() {
 						<img
 							src="/excode.png"
 							alt="Brand Logo"
-							style={{ height: "10.9vh", width: "26.3vw" }}
+							style={{ width: "350px" }}
 						/>
 						<Title>Mission</Title>
 						<p style={{ width: "500" }}>
