@@ -52,6 +52,7 @@ const ViikotLeft = styled.div`
 	text-align: center;
 	background-color: white;
 	z-index: 3;
+	justify-content:center;
 `;
 
 const Viikot = styled.div` 
