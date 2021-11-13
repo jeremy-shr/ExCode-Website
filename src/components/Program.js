@@ -14,13 +14,14 @@ const BannerH1 = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
 	color: #62b22f;
-	font-size: 2vw;
+	font-size: 8vw;
 `;
 
 const BoxH1 = styled.h1`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 8vw;
+	font-size: 2vw;
+	color: #62b22f;
 `;
 
 const TreeContainer = styled.div`
@@ -45,7 +46,6 @@ const ViikotLeft = styled.div`
 	border-width: 3px;
 	border-color: #468845;
 	border-radius: 20px;
-	color: #fff;
 	font-size: 20px;
 	line-height: 175%;
 	font-weight: 400;
@@ -62,7 +62,6 @@ const Viikot = styled.div`
     border-width: 3px;
     border-color: #468845;
     border-radius: 20px;
-    color: #fff;
     font-size: 20px;
     line-height: 175%;
     font-weight: 400;
@@ -136,47 +135,47 @@ function Program() {
 						<Structure>
 						<Left className='row'>
 								<Viikot>
-									Yo
+									<BoxH1>Week 1</BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yo
+								<BoxH1>Week 2</BoxH1>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
-									Yo
+								<BoxH1>Week 3</BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yo
+								<BoxH1>Week 5</BoxH1>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
-									Yo
+								<BoxH1>REST WEEK</BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yooooo
+								<BoxH1>Week 5</BoxH1>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
-									Yo
+								<BoxH1>Week 6</BoxH1>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-									Yo
+								<BoxH1>Week 7</BoxH1>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
-									Yo
+								<BoxH1>Week 8</BoxH1>
 								</Viikot>
 							</Left>
 							<div style={{display: "flex", position: "absolute", width: "99%", height: '2100px', justifyContent: "center"}}>
