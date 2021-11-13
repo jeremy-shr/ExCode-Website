@@ -83,7 +83,7 @@ function Faq() {
     return (
         <>
             <FaqSection>
-                <Title><TypeWriter typing={0.5}><span style={{color: "#62b22f" }}>&lt;FAQ&gt;</span></TypeWriter>
+                <Title><TypeWriter typing={0.3}><span style={{color: "#62b22f" }}>&lt;FAQ&gt;</span></TypeWriter>
                 
                 </Title>
             </FaqSection>

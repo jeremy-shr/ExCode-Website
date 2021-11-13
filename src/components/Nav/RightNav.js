@@ -10,7 +10,7 @@ const Ul = styled.ul`
     justify-content: center;
     align-items: center;
     flex-direction: column !important;
-    z-index: 1;
+    z-index: 10;
 
     NavLink {
         padding: 18px 10px;
@@ -60,13 +60,14 @@ function RightNavbar({open}) {
             <h3>&gt;</h3>
             </div>
             <NavLink
-            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                <span>Program</span>
-            </NavLink>
-            <NavLink
             to={'/about'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                <span> About Us </span>
             </NavLink>
+            <NavLink
+            to={'/program'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+               <span> Program </span>
+            </NavLink>
+            
             <NavLink
             to={'/faq'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> FAQ </span>
