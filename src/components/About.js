@@ -6,7 +6,7 @@ import "./AboutUs.css";
 
 const Title = styled.h1`
 	font-family: "Ubuntu", sans-serif;
-	font-size: 53px;
+	font-size: 60px;
 `;
 
 const SubTitle = styled.h2`
@@ -125,6 +125,7 @@ const TeamContainer2 = styled.div`
 		flex-direction: column;
 		align-items: center;
 		margin-top: 50px;
+		margin-bottom: 120px;
 		font-family: "Ubuntu";
 		font-weight: 600;
 	}
@@ -151,13 +152,22 @@ function About() {
 							borderRadius: 300,
 							height: 350,
 							width: 350,
+							marginLeft: "22%",
+							marginBottom: "5%",
 						}}
 					/>
 				</ImageContain>
 				<TitleContain className="container">
 					<Title>
-						The <strong>EX</strong>Code Mission
+						The
+						<br />
 					</Title>
+					<img
+						src="/excode.png"
+						alt="Brand Logo"
+						style={{ height: 90, width: 430 }}
+					/>
+					<Title>Mission</Title>
 					<p style={{ width: "500" }}>
 						Lorem ipsum dolor sit, amet consectetur adipisicing
 						elit. Possimus, explicabo. Atque ipsam architecto neque
