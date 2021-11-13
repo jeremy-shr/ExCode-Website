@@ -69,14 +69,14 @@ const GreenBox = styled.div`
 		font-size: 40px;
 		font-weight: 600;
 		color: #fff;
-		margin-bottom: 90%;
+		margin-bottom: 70%;
 	}
 
 	p {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
 		font-size: 20px;
-		margin-bottom: -1%;
+		margin-bottom: -10%;
 	}
 `;
 
@@ -169,8 +169,26 @@ function About() {
 					/>
 					<Title>Mission</Title>
 					<p style={{ width: "500" }}>
-						
-Initially founded in 2016, as an after-school coding workshop, ExCode’s growth has been unprecedented, with the vision to be able to give any university student access to the resources and teaching needed to be able to learn to code. The potential was clear so through the Exeter Entrepreneurs community backing, rising popularity and belief in the project, ExCode is now recognised as the leading student-run coding bootcamp in the UK. We are fully aware that the majority of  coding bootcamps and computer-science degree programs come with massive financial paywalls, therefore we are committed to being completely FREE to ensure anyone can enroll in our bootcamp. This is thanks to our many sponsors who continue to support the programs and believe in our mission. We are currently partnered with the Exeter Artificial Intelligence society (X-AI) to deliver our course fully in Python, the most accessible programming language for learners and are backed by the University of Exeter to help  foster core programming concepts across all the academic colleges.
+						Initially founded in 2016, as an after-school coding
+						workshop, ExCode’s growth has been unprecedented, with
+						the vision to be able to give any university student
+						access to the resources and teaching needed to be able
+						to learn to code. The potential was clear so through the
+						Exeter Entrepreneurs community backing, rising
+						popularity and belief in the project, ExCode is now
+						recognised as the leading student-run coding bootcamp in
+						the UK. We are fully aware that the majority of coding
+						bootcamps and computer-science degree programs come with
+						massive financial paywalls, therefore we are committed
+						to being completely FREE to ensure anyone can enroll in
+						our bootcamp. This is thanks to our many sponsors who
+						continue to support the programs and believe in our
+						mission. We are currently partnered with the Exeter
+						Artificial Intelligence society (X-AI) to deliver our
+						course fully in Python, the most accessible programming
+						language for learners and are backed by the University
+						of Exeter to help foster core programming concepts
+						across all the academic colleges.
 					</p>
 				</TitleContain>
 			</FirstContainer>
@@ -191,10 +209,10 @@ Initially founded in 2016, as an after-school coding workshop, ExCode’s growth
 							<Carousel.Caption>
 								<h3>Equality</h3>
 								<p className="carousel-text">
-									
-Our classes aim to equal the number of women and men in the technology sector, with our current enrolment almost evenly split with 53% men and 47% women
-
-
+									Our classes aim to equal the number of women
+									and men in the technology sector, with our
+									current enrolment almost evenly split with
+									53% men and 47% women.
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -209,8 +227,7 @@ Our classes aim to equal the number of women and men in the technology sector, w
 							<Carousel.Caption>
 								<h3>Opportunity</h3>
 								<p className="carousel-text">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit.
+									placeholder text
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
@@ -225,8 +242,7 @@ Our classes aim to equal the number of women and men in the technology sector, w
 							<Carousel.Caption>
 								<h3>Multidisciplinary</h3>
 								<p className="carousel-text">
-									Praesent commodo cursus magna, vel
-									scelerisque nisl consectetur.
+									Placeholder text
 								</p>
 							</Carousel.Caption>
 						</Carousel.Item>
