@@ -4,22 +4,29 @@ import styled from "styled-components";
 
 const Banner = styled.div`
 
-	margin-left: 300px;
+	margin-left: 200px;
 
 `;
 
 
 const BannerH1 = styled.h1`
-	font-family: 'Raleway', sans-serif, bold ;
+	font-family: 'Ubuntu', sans-serif, bold ;
 	font-style: bold;
 	color: #62b22f;
-	font-size: 8vw;
+	font-size: 70px;
 `;
 
 const BoxH1 = styled.h1`
-	font-family: 'Raleway', sans-serif, bold ;
+	font-family: 'Ubuntu', sans-serif, bold ;
 	font-style: bold;
 	font-size: 2vw;
+	color: #62b22f;
+`;
+
+const Boxp = styled.p`
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
+	font-size: 1.5vw;
 	color: #62b22f;
 `;
 
@@ -53,7 +60,7 @@ const ViikotLeft = styled.div`
 	background-color: white;
 	z-index: 3;
 	justify-content:center;
-	align-items:center;
+	${'' /* align-items:center; */}
 `;
 
 const Viikot = styled.div` 
@@ -71,7 +78,7 @@ const Viikot = styled.div`
     text-align: center;
 	background-color: white;
 	z-index: 3;
-	align-items:center;
+	${'' /* align-items:center; */}
 	justify-content:center;
 `;
 
@@ -123,7 +130,11 @@ const Left = styled.div`
 function Program() {
 	return (
 		<>
-			<Banner className='container-fluid'>
+		<Banner className='container-fluid'>
+				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
+				&lt;Structure Of The Program&gt;
+				</BannerH1>
+			{/* <Banner className='container-fluid'>
 				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
 					Know
 				</BannerH1>
@@ -132,7 +143,7 @@ function Program() {
 				</BannerH1>
 				<BannerH1 className='row' style={{ marginLeft: "25vw" }}>
 					Program
-				</BannerH1>
+				</BannerH1> */}
 			</Banner>
 			<TreeContainer className='container-fluid'>
 				<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
@@ -141,22 +152,26 @@ function Program() {
 						<Left className='row'>
 								<Viikot>
 									<BoxH1>Week 1</BoxH1>
-									<BoxH1>Nibbe</BoxH1>
+									<Boxp>Numbers and Basic Operations</Boxp>
+									
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
 								<BoxH1>Week 2</BoxH1>
+								<Boxp>Values, Variables and Expressions</Boxp>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
 								<BoxH1>Week 3</BoxH1>
+								<Boxp>Data Types and Structures</Boxp>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
-								<BoxH1>Week 5</BoxH1>
+								<BoxH1>Week 4</BoxH1>
+								<Boxp>Functions</Boxp>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
@@ -167,21 +182,25 @@ function Program() {
 							<Right className='row'>
 								<ViikotLeft>
 								<BoxH1>Week 5</BoxH1>
+								<Boxp>Control Structures</Boxp>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
 								<BoxH1>Week 6</BoxH1>
+								<Boxp>Beauty Of Code</Boxp>
 								</Viikot>
 							</Left>
 							<Right className='row'>
 								<ViikotLeft>
 								<BoxH1>Week 7</BoxH1>
+								<Boxp>File Handling and Databases</Boxp>
 								</ViikotLeft>
 							</Right>
 							<Left className='row'>
 								<Viikot>
 								<BoxH1>Week 8</BoxH1>
+								<Boxp>Recap and Test!</Boxp>
 								</Viikot>
 							</Left>
 							<div style={{display: "flex", position: "absolute", width: "99%", height: '2100px', justifyContent: "center"}}>
