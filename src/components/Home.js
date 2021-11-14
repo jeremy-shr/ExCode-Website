@@ -97,7 +97,6 @@ const SubTitle = styled.h2`
 	font-size: 30px;
 	font-family: "Ubuntu", sans-serif;
 	font-size: 70px;
-	font-weight: 600;
 `;
 
 const SubTitle2 = styled.h2`
