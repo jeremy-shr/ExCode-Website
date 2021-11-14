@@ -24,6 +24,8 @@ const SubTitle = styled.h2`
 
 const SubtitleContainer = styled.div`
 
+	width: 50vw;
+
 	@media screen and (max-width: 830px) {
 		display: none;
 	  }
@@ -59,6 +61,8 @@ const BackgroundImageContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 
 	h2 {
 		position: relative;
@@ -100,6 +104,25 @@ const GreenBox = styled.div`
 		margin-bottom: 60%;
 	}
 
+	@media screen and (max-width: 830px) {
+		width: 100vw;
+
+		h3 {
+			text-align: center;
+			font-family: "Raleway", sans-serif;
+			font-size: 2.7vw;
+			font-weight: 600;
+			color: #fff;
+			margin-bottom: 75%;
+		}
+	
+		p {
+			text-align: center;
+			font-family: "Raleway", sans-serif;
+			font-size: 1.38vw;
+			margin-bottom: 20%;
+		}
+	  }
 
 `;
 
@@ -240,7 +263,7 @@ function About() {
 					<SubTitle>&lt;Our Values&gt;</SubTitle>
 				</SubtitleContainer>
 
-				<GreenBox className="container">
+				<GreenBox className="container-fluid">
 					<Carousel className="carousel-size">
 						<Carousel.Item>
 							<img
