@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Carousel from "react-bootstrap/Carousel";
 import "./AboutUs.css";
 
@@ -16,11 +19,22 @@ const SubTitle = styled.h2`
 	font-size: 3.61vw;
 	margin-left: 147px;
 	margin-top: 120px;
-	color: #62b22f;
+	color: #468845;
+`;
+
+const SubtitleContainer = styled.div`
+
+	@media screen and (max-width: 830px) {
+		display: none;
+	  }
 `;
 
 const ImageContain = styled.div`
-	padding: 50px;
+	padding: 40px;
+
+	@media screen and (max-width: 830px) {
+		display: none;
+	  }
 `;
 
 const TitleContain = styled.div`
@@ -32,6 +46,10 @@ const TitleContain = styled.div`
 	p {
 		font-size: 1.15vw;
 	}
+
+	@media screen and (max-width: 830px) {
+		padding: 20px;
+	  }
 `;
 
 const BackgroundImageContainer = styled.div`
@@ -44,9 +62,10 @@ const BackgroundImageContainer = styled.div`
 
 	h2 {
 		position: relative;
-		color: #62b22f;
+		color: #468845;
 		font-size: 3.6vw;
 	}
+
 `;
 
 const FirstContainer = styled.div`
@@ -62,12 +81,9 @@ const GreenBox = styled.div`
 	flex-direction: column;
 	align-items: center;
 	background-color: #468845;
-	height: 100vh;
-	width: 69vw;
-	margin-top: 13.7vh;
-	margin-right: 3.4vw;
-	margin-bottom: 13.7vh;
+	width: 50vw;
 
+	
 	h3 {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
@@ -83,6 +99,8 @@ const GreenBox = styled.div`
 		font-size: 1.38vw;
 		margin-bottom: 60%;
 	}
+
+
 `;
 
 const TeamTitleContainer = styled.div`
@@ -149,22 +167,24 @@ function About() {
 	return (
 		<>
 			<FirstContainer className="container-fluid">
-				<ImageContain className="container">
+				<div className='row'>
+				<ImageContain className="col-md-4">
 					<img
 						src="profile-pic.jpg"
 						alt="About Pic"
 						style={{
-							borderRadius: 500,
-							maxWidth: "24.3vw",
-							width: "100%",
+							borderRadius: "50%",
+							maxWidth: "48vh",
+							width: "25vw",
 							maxHeight: "48vh",
-							height: "100%",
+							height: "25vw",
 							marginLeft: "22%",
 							marginBottom: "50%",
+							objectFit: "cover",
 						}}
 					/>
 				</ImageContain>
-				<TitleContain className="container-fluid">
+				<TitleContain className="col">
 					<div className="container">
 						<Title>
 							The
@@ -173,7 +193,7 @@ function About() {
 						<img
 							src="/excode.png"
 							alt="Brand Logo"
-							style={{ height: "10.9vh", width: "26.3vw" }}
+							style={{ width: "350px" }}
 						/>
 						<Title>Mission</Title>
 						<p style={{ width: "500" }}>
@@ -213,13 +233,14 @@ function About() {
 						</p>
 					</div>
 				</TitleContain>
+				</div>
 			</FirstContainer>
 			<BackgroundImageContainer className="container-fluid">
-				<div className="container">
+				<SubtitleContainer>
 					<SubTitle>&lt;Our Values&gt;</SubTitle>
-				</div>
+				</SubtitleContainer>
 
-				<GreenBox>
+				<GreenBox className="container">
 					<Carousel className="carousel-size">
 						<Carousel.Item>
 							<img
