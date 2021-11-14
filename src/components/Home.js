@@ -7,12 +7,14 @@ import TypeWriter from "react-typewriter";
 const Title = styled.h1`
 	font-family: "Raleway", sans-serif, bold;
 	font-style: bold;
-	font-size: 50px;
+	font-size: 70px;
+	font-weight: 900;
+
 `;
 
 const R1 = styled.section`
 	background-image: url("/course.png");
-	height: 400px;
+	height: 100vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -26,7 +28,7 @@ const R2 = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 5vw 0 5vw 0;
+	margin: 0 0 5vw 0;
 `;
 
 const R3 = styled.section`
@@ -91,6 +93,14 @@ const Paragraph = styled.p`
 `;
 
 const SubTitle = styled.h2`
+	color: #62b22f;
+	font-size: 30px;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 70px;
+	font-weight: 600;
+`;
+
+const SubTitle2 = styled.h2`
 	color: #62b22f;
 	font-size: 30px;
 	font-family: "Ubuntu", sans-serif;
@@ -337,13 +347,13 @@ function Home() {
 				</div>
 			</Comments>
 			<R5 className="row-landing-sec5 col-sm">
-				<SubTitle>
+				<SubTitle2>
 					<TypeWriter typing={0.2}>
 						<span style={{ color: "#62b22f" }}>
 							&lt;Have any questions?&gt;
 						</span>
 					</TypeWriter>
-				</SubTitle>
+				</SubTitle2>
 				<p
 					style={{
 						fontFamily: "Raleway",
