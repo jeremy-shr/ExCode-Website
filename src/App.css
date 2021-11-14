@@ -97,5 +97,14 @@
 	display: none;
 }
 
+@media screen and (max-width: 1150px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
 
 

@@ -9,6 +9,12 @@ const Title = styled.h1`
 	font-style: bold;
 	font-size: 70px;
 	font-weight: 900;
+	
+@media screen and (max-width: 1000px) {
+	font-size: 10vw;
+
+	}
+  }
 
 `;
 
