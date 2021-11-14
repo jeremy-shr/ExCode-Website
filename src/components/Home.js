@@ -273,11 +273,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Zachary Dive</ImgName>
+									<ImgName>Peter Coulson</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-										Co-Founder of Mint.io
+									The Plug
 									</ImgSubName>
 								</div>
 							</div>
@@ -306,11 +306,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Zachary Dive</ImgName>
+									<ImgName>Peter Coulson</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-										Co-Founder of Mint.io
+										Stoic King
 									</ImgSubName>
 								</div>
 							</div>
@@ -339,11 +339,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Zachary Dive</ImgName>
+									<ImgName>Peter Coulson</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-										Co-Founder of Mint.io
+										Fkn Druggo
 									</ImgSubName>
 								</div>
 							</div>
