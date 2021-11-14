@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import TypeWriter from 'react-typewriter';
 
 
 const Banner = styled.div`
 
-	margin-left: 200px;
+	display:flex;
+	justify-content:center;
 
 `;
 
@@ -28,6 +30,8 @@ const Boxp = styled.p`
 	font-style: bold;
 	font-size: 1.5vw;
 	color: #62b22f;
+	
+
 `;
 
 const TreeContainer = styled.div`
@@ -61,6 +65,7 @@ const ViikotLeft = styled.div`
 	z-index: 3;
 	justify-content:center;
 	${'' /* align-items:center; */}
+	flex-direction:column;
 `;
 
 const Viikot = styled.div` 
@@ -80,6 +85,7 @@ const Viikot = styled.div`
 	z-index: 3;
 	${'' /* align-items:center; */}
 	justify-content:center;
+	flex-direction:column;
 `;
 
 const Box = styled.div`
@@ -132,7 +138,8 @@ function Program() {
 		<>
 		<Banner className='container-fluid'>
 				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
-				&lt;Structure Of The Program&gt;
+			       &lt;Structure Of The Program&gt;
+				
 				</BannerH1>
 			{/* <Banner className='container-fluid'>
 				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
@@ -153,7 +160,6 @@ function Program() {
 								<Viikot>
 									<BoxH1>Week 1</BoxH1>
 									<Boxp>Numbers and Basic Operations</Boxp>
-									
 								</Viikot>
 							</Left>
 							<Right className='row'>

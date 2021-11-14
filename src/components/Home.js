@@ -326,7 +326,7 @@ function Home() {
 					</div>
 				</div>
 			</Comments>
-			<R5 className="row-landing-sec5">
+			<R5 className="row-landing-sec5 col-sm">
 				<SubTitle>
 					<TypeWriter typing={0.2}>
 						<span style={{ color: "#62b22f" }}>
