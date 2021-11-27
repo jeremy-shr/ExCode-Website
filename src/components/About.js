@@ -198,9 +198,9 @@ function About() {
 						style={{
 							borderRadius: "50%",
 							maxWidth: "48vh",
-							width: "25vw",
-							maxHeight: "48vh",
-							height: "25vw",
+							width: "50vw",
+							maxHeight: "70vh",
+							height: "60vw",
 							marginLeft: "22%",
 							marginBottom: "50%",
 							objectFit: "cover",
