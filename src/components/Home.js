@@ -252,16 +252,12 @@ function Home() {
 				<div className="row">
 					<ColSm className="col-sm">
 						<SubParagraph>
-							/* Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Aut repellendus tempore ducimus
-							consectetur deleniti. Rerum quidem quod quam in
-							natus ipsam ex, unde voluptatibus excepturi eligendi
-							molestiae laboriosam sunt reprehenderit? *\
+							/* I've alway wanted to learn to code but I was scared to study computer science at university. ExCode gave me the confidence to learn a new skill and learn in a friendly environment where I could be supported. I still can't beleive its free!*\
 						</SubParagraph>
 						<div className="row" style={{flexWrap: 'nowrap'}}>
 							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
-									src="/profile-pic.jpg"
+									src="/tilda.jpg"
 									alt="Quoter pic"
 									style={{
 										height: 50,
@@ -273,11 +269,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Peter Coulson</ImgName>
+									<ImgName>Tilda Tarrant</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-									The Plug
+									Bsc Biology
 									</ImgSubName>
 								</div>
 							</div>
@@ -285,16 +281,12 @@ function Home() {
 					</ColSm>
 					<ColSm className="col-sm">
 						<SubParagraph>
-							/* Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Aut repellendus tempore ducimus
-							consectetur deleniti. Rerum quidem quod quam in
-							natus ipsam ex, unde voluptatibus excepturi eligendi
-							molestiae laboriosam sunt reprehenderit? *\
+							/* Without ExCode I don't think I could've passed my machine learning modules and have achieived a 2:1. My Teaching Assistant Ben Chatfield was amazing, going out of his way to explain areas where I was confused and help me outside lessons.
 						</SubParagraph>
 						<div className="row" style={{flexWrap: 'nowrap'}}>
 							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
-									src="/profile-pic.jpg"
+									src="/yak.jpg"
 									alt="Quoter pic"
 									style={{
 										height: 50,
@@ -306,11 +298,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Peter Coulson</ImgName>
+									<ImgName>Jacques Krzymuski</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-										Stoic King
+										Msc Finance
 									</ImgSubName>
 								</div>
 							</div>
@@ -318,16 +310,12 @@ function Home() {
 					</ColSm>
 					<ColSm className="col-sm">
 						<SubParagraph>
-							/* Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Aut repellendus tempore ducimus
-							consectetur deleniti. Rerum quidem quod quam in
-							natus ipsam ex, unde voluptatibus excepturi eligendi
-							molestiae laboriosam sunt reprehenderit? *\
+							/* Through ExCode I was able to learn the coding skills required for my Masters progam. For any student that needs programming qualifications for job applications or graduate studies, I highly recommend this bootcamp*\
 						</SubParagraph>
 						<div className="row" style={{flexWrap: 'nowrap'}}>
 							<div className="col-sm-1" style={{width: '70px'}}>
 								<img
-									src="/profile-pic.jpg"
+									src="/jade.jpg"
 									alt="Quoter pic"
 									style={{
 										height: 50,
@@ -339,11 +327,11 @@ function Home() {
 							</div>
 							<div className="col">
 								<div className="row" style={{ width: "353px" }}>
-									<ImgName>Peter Coulson</ImgName>
+									<ImgName>Jade Léger</ImgName>
 								</div>
 								<div className="row" style={{ width: "353px" }}>
 									<ImgSubName>
-										Fkn Druggo
+										Msc Virology
 									</ImgSubName>
 								</div>
 							</div>
