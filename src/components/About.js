@@ -322,7 +322,7 @@ function About() {
 				</GreenBox>
 			</BackgroundImageContainer>
 
-			<TeamTitleContainer>
+			{/* <TeamTitleContainer>
 				<SubTitle>&lt;Our Team&gt;</SubTitle>
 			</TeamTitleContainer>
 			<TeamContainer1>
@@ -401,7 +401,7 @@ function About() {
 					<h4>My Name</h4>
 					<h5>Teacher Assistant</h5>
 				</div>
-			</TeamContainer2>
+			</TeamContainer2> */}
 		</>
 	);
 }
