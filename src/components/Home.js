@@ -252,7 +252,7 @@ function Home() {
 				<div className="row">
 					<ColSm className="col-sm">
 						<SubParagraph>
-							/* I've alway wanted to learn to code but I was scared to study computer science at university. ExCode gave me the confidence to learn a new skill and learn in a friendly environment where I could be supported. I still can't beleive its free!*\
+							/* I've alway wanted to learn to code but I was scared to study computer science at university. ExCode gave me the confidence to learn a new skill and learn in a friendly environment where I could be supported. I still can't believe its free!*\
 						</SubParagraph>
 						<div className="row" style={{flexWrap: 'nowrap'}}>
 							<div className="col-sm-1" style={{width: '70px'}}>
