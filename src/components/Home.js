@@ -281,7 +281,7 @@ function Home() {
 					</ColSm>
 					<ColSm className="col-sm">
 						<SubParagraph>
-							/* Without ExCode I don't think I could've passed my machine learning modules and have achieived a 2:1. My Teaching Assistant Ben Chatfield was amazing, going out of his way to explain areas where I was confused and help me outside lessons.*\
+							/* Without ExCode I don't think I could've passed my machine learning modules and have achieived a First with Dean's Commendation. My Teaching Assistant Ben Chatfield was amazing, going out of his way to explain areas where I was confused and help me outside lessons.*\
 						</SubParagraph>
 						<div className="row" style={{flexWrap: 'nowrap'}}>
 							<div className="col-sm-1" style={{width: '70px'}}>
