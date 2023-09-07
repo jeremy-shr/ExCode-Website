@@ -1,75 +1,67 @@
 import React from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Carousel from "react-bootstrap/Carousel";
 import "./AboutUs.css";
 
 const Title = styled.h1`
 	font-family: "Ubuntu", sans-serif;
-	font-size: 4.375vw;
+	font-size: 3.5em;
 	font-weight: 600;
+	@media screen and (max-width: 830px) {
+		font-size: 2.8em
+	  }
+`;
+
+const TitleLogo = styled.img`
+	width: 350px;
+	@media screen and (max-width: 400px) {
+		width: 200px;
+	  }
+`;
+
+const ValuesCont = styled.section`
+	height: fit-content;
+	min-height: 95vh;
+
+	@media screen and (max-width: 830px) {
+		min-height: 75vh;
+	  }
+	
 `;
 
 const SubTitle = styled.h2`
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 900;
-	font-size: 3.61vw;
-	margin-left: 147px;
-	margin-top: 120px;
+	font-size: 3.5em;
+	padding-left: 50px;
+	padding-bottom: 30px;
 	color: #468845;
-`;
-
-const SubtitleContainer = styled.div`
-
-	width: 50vw;
 
 	@media screen and (max-width: 830px) {
-		display: none;
-	  }
-`;
-
-const ImageContain = styled.div`
-	padding: 40px;
-
-	@media screen and (max-width: 830px) {
-		display: none;
+		font-size: 2.5em;
 	  }
 `;
 
 const TitleContain = styled.div`
+	height: fit-content;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	justify-content: center;
 	padding: 50px;
+	padding-right: 0 !important;
 
 	p {
-		font-size: 1.15vw;
+		padding-top: 6px;
+		font-size: 1em;
 	}
 
 	@media screen and (max-width: 830px) {
 		padding: 20px;
+		padding-top: 60px;
 	  }
-`;
-
-const BackgroundImageContainer = styled.div`
-	background-image: url("/carouselBackground.png");
-	background-size: cover;
-	height: 69vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
-
-	h2 {
-		position: relative;
-		color: #468845;
-		font-size: 3.6vw;
-	}
-
 `;
 
 const FirstContainer = styled.div`
@@ -80,189 +72,102 @@ const FirstContainer = styled.div`
 `;
 
 const GreenBox = styled.div`
+	height: 500px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	background-color: #468845;
-	width: 50vw;
+	width: 520px;
+	border-radius: 5px;
+	max-width: 100vw;
 
 	
 	h3 {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
-		font-size: 2.7vw;
+		font-size: 2em;
 		font-weight: 600;
 		color: #fff;
-		margin-bottom: 90%;
 	}
 
 	p {
 		text-align: center;
 		font-family: "Raleway", sans-serif;
-		font-size: 1.38vw;
-		margin-bottom: 60%;
+		font-size: 1.2em;
 	}
 
 	@media screen and (max-width: 830px) {
-		width: 100vw;
 
 		h3 {
-			text-align: center;
 			font-family: "Raleway", sans-serif;
-			font-size: 2.7vw;
+			font-size: 2em;
 			font-weight: 600;
 			color: #fff;
-			margin-bottom: 75%;
 		}
 	
 		p {
-			text-align: center;
 			font-family: "Raleway", sans-serif;
-			font-size: 1.38vw;
-			margin-bottom: 20%;
+			font-size: 1em;
 		}
 	  }
-
 `;
 
-const TeamTitleContainer = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-`;
-
-const TeamContainer1 = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-	justify-content: space-evenly;
-
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 6.8vh;
-		font-family: "Ubuntu";
-		font-weight: 600;
-	}
-
-	h4 {
-		margin-top: 2.7vh;
-	}
-
-	h5 {
-		font-size: 1.25vw;
-		color: grey;
-	}
-`;
-
-const TeamContainer2 = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-	justify-content: space-evenly;
-
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 6.8vh;
-		margin-bottom: 16.4vh;
-		font-family: "Ubuntu";
-		font-weight: 600;
-	}
-
-	h4 {
-		margin-top: 2.7vh;
-	}
-
-	h5 {
-		font-size: 1.25vw;
-		color: grey;
-	}
-`;
 
 function About() {
 	return (
 		<>
 			<FirstContainer className="container-fluid">
 				<div className='row'>
-				<ImageContain className="col-md-4">
-					<img
-						src="profile-pic.jpg"
-						alt="About Pic"
-						style={{
-							borderRadius: "50%",
-							maxWidth: "48vh",
-							width: "50vw",
-							maxHeight: "70vh",
-							height: "60vw",
-							marginLeft: "22%",
-							marginBottom: "50%",
-							objectFit: "cover",
-						}}
-					/>
-				</ImageContain>
-				<TitleContain className="col">
-					<div className="container">
-						<Title>
-							The
-							<br />
-						</Title>
-						<img
-							src="/excode.png"
-							alt="Brand Logo"
-							style={{ width: "350px" }}
-						/>
-						<Title>Mission</Title>
-						<p style={{ width: "500" }}>
-							Initially founded in 2016, as an after-school coding
-							workshop, ExCode’s growth has been unprecedented,
-							with the vision to be able to give any university
-							student access to the resources and teaching needed
-							to be able to learn to code.
-						</p>
 
-						<p style={{ width: "500" }}>
-							The potential was clear so through the Exeter
-							Entrepreneurs community backing, rising popularity
-							and belief in the project, ExCode is now recognised
-							as the leading student-run coding bootcamp in the
-							UK.
-						</p>
+					<TitleContain className="col">
+						<div className="container">
+							<Title>
+								The
+								<br />
+							</Title>
+							<TitleLogo
+								src="/excode.png"
+								alt="Brand Logo"
+							/>
+							<Title style={{ marginBottom: "15px" }}>Mission</Title>
+							<p style={{ width: "500" }}>
+								Initially founded in 2016, as an after-school coding
+								workshop, ExCode’s growth has been unprecedented,
+								with the vision to be able to give any university
+								student access to the resources and teaching needed
+								to be able to learn to code.
+							</p>
 
-						<p style={{ width: "500" }}>
-							We are fully aware that the majority of coding
-							bootcamps and computer-science degree programs come
-							with massive financial paywalls, therefore we are
-							committed to being completely FREE to ensure anyone
-							can enroll in our bootcamp. This is thanks to our
-							many sponsors who continue to support the programs
-							and believe in our mission.
-						</p>
+							<p style={{ width: "500" }}>
+								The potential was clear so through the Exeter
+								Entrepreneurs community backing, rising popularity
+								and belief in the project, ExCode is now recognised
+								as the leading student-run coding bootcamp in the
+								UK.
+							</p>
 
-						<p style={{ width: "500" }}>
-							We are currently partnered with the Exeter
-							Artificial Intelligence society (X-AI) to deliver
-							our course fully in Python, the most accessible
-							programming language for learners and are backed by
-							the University of Exeter to help foster core
-							programming concepts across all the academic
-							colleges.
-						</p>
-					</div>
-				</TitleContain>
+							<p style={{ width: "500" }}>
+								We are fully aware that the majority of coding
+								bootcamps and computer-science degree programs come
+								with massive financial paywalls, therefore we are
+								committed to being completely FREE to ensure anyone
+								can enroll in our bootcamp. This is thanks to our
+								many sponsors who continue to support the programs
+								and believe in our mission.
+							</p>
+
+							<p style={{ width: "500" }}>
+								Currently led by our Head of Tech, Jeremy Shorter, and a cohort of highly skilled workshop leaders, ExCode delivers an accessible and essential introduction to Python. We are backed by the University of Exeter to help foster core programming concepts across all the academic colleges.
+							</p>
+						</div>
+					</TitleContain>
 				</div>
 			</FirstContainer>
-			<BackgroundImageContainer className="container-fluid">
-				<SubtitleContainer>
-					<SubTitle>&lt;Our Values&gt;</SubTitle>
-				</SubtitleContainer>
 
+			<ValuesCont>
+
+				<SubTitle>&lt;Our Values&gt;</SubTitle>
 				<GreenBox className="container-fluid">
 					<Carousel className="carousel-size">
 						<Carousel.Item>
@@ -270,7 +175,7 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_pair_programming.svg"
 								alt="First slide"
-								style={{ height: "68.5vw" }}
+								style={{ height: "400px", transform: "translateY(-40px)" }}
 							/>
 							<Carousel.Caption>
 								<h3>Equality</h3>
@@ -287,7 +192,7 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_code_typing.svg"
 								alt="Second slide"
-								style={{ height: "68.5vw" }}
+								style={{ height: "400px", transform: "translateY(-40px)" }}
 							/>
 
 							<Carousel.Caption>
@@ -305,7 +210,7 @@ function About() {
 								className="d-block w-50"
 								src="/undraw_source_code.svg"
 								alt="Third slide"
-								style={{ height: "68.5vw" }}
+								style={{ height: "400px", transform: "translateY(-40px)" }}
 							/>
 
 							<Carousel.Caption>
@@ -320,88 +225,7 @@ function About() {
 						</Carousel.Item>
 					</Carousel>
 				</GreenBox>
-			</BackgroundImageContainer>
-
-			{/* <TeamTitleContainer>
-				<SubTitle>&lt;Our Team&gt;</SubTitle>
-			</TeamTitleContainer>
-			<TeamContainer1>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>Martin Brett</h4>
-					<h5>Lead Proffesor</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-			</TeamContainer1>
-
-			<TeamContainer2>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-				<div>
-					<img
-						src="/joseph-gonzalez-pic.jpg"
-						alt="Team Member"
-						className="imgStyling"
-					/>
-					<h4>My Name</h4>
-					<h5>Teacher Assistant</h5>
-				</div>
-			</TeamContainer2> */}
+			</ValuesCont>
 		</>
 	);
 }

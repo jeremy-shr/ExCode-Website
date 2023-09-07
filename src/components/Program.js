@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import TypeWriter from 'react-typewriter';
-
+import Button from "react-bootstrap/Button";
 
 const Banner = styled.div`
-
+	padding-top: 10vh;
 	display:flex;
 	justify-content:center;
-
 `;
 
 
@@ -15,27 +13,40 @@ const BannerH1 = styled.h1`
 	font-family: 'Ubuntu', sans-serif, bold ;
 	font-style: bold;
 	color: #62b22f;
-	font-size: 70px;
+	font-size: 4em;
+	margin-left: 10px;
+	margin-right: 10px;
+	@media screen and (max-width: 992px) {
+		font-size: 3em;
+	  }
+	  @media screen and (max-width: 620px) {
+		font-size: 1.9em;
+	  }
 `;
 
+const BodyContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 70px;
+`
 const BoxH1 = styled.h1`
 	font-family: 'Ubuntu', sans-serif, bold ;
 	font-style: bold;
-	font-size: 2vw;
-	color: #62b22f;
+	font-size: 0.9em;
+	font-weight: 700;
+	color: #468845;
 `;
 
 const Boxp = styled.p`
 	font-family: 'Raleway', sans-serif, bold ;
 	font-style: bold;
-	font-size: 1.5vw;
+	font-size: 1em;
 	color: #62b22f;
-	
-
 `;
 
 const TreeContainer = styled.div`
-margin-bottom: 16.4vh;
+	margin-bottom: 30px;
 	
 `;
 
@@ -64,7 +75,6 @@ const ViikotLeft = styled.div`
 	background-color: white;
 	z-index: 3;
 	justify-content:center;
-	${'' /* align-items:center; */}
 	flex-direction:column;
 `;
 
@@ -119,6 +129,7 @@ const Right = styled.div`
 	@media screen and (max-width: 992px) {
 		justify-content: center;
 		padding-right: 0px;
+		margin-bottom: 40px;
 	  }
 `;
 
@@ -128,6 +139,7 @@ const Left = styled.div`
 	@media screen and (max-width: 992px) {
 		justify-content: center;
 		padding-left: 0px;
+		margin-bottom: 40px;
 	  }
 `;
 
@@ -136,86 +148,81 @@ const Left = styled.div`
 function Program() {
 	return (
 		<>
-		<Banner className='container-fluid'>
-				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
-			       &lt;Structure Of The Program&gt;
-				
+			<Banner className='container-fluid'>
+				<BannerH1 className='row'>
+					&lt;Structure Of The Program&gt;
+
 				</BannerH1>
-			{/* <Banner className='container-fluid'>
-				<BannerH1 className='row' style={{ marginLeft: "8.3vw" }}>
-					Know
-				</BannerH1>
-				<BannerH1 className='row' style={{ marginLeft: "16.6vw" }}>
-					The
-				</BannerH1>
-				<BannerH1 className='row' style={{ marginLeft: "25vw" }}>
-					Program
-				</BannerH1> */}
 			</Banner>
-			<TreeContainer className='container-fluid'>
-				<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-					<Box className='container-fluid'>
-						<Structure>
-						<Left className='row'>
-								<Viikot>
-									<BoxH1>Week 1</BoxH1>
-									<Boxp>Numbers and Basic Operations</Boxp>
-								</Viikot>
-							</Left>
-							<Right className='row'>
-								<ViikotLeft>
-								<BoxH1>Week 2</BoxH1>
-								<Boxp>Values, Variables and Expressions</Boxp>
-								</ViikotLeft>
-							</Right>
-							<Left className='row'>
-								<Viikot>
-								<BoxH1>Week 3</BoxH1>
-								<Boxp>Data Types and Structures</Boxp>
-								</Viikot>
-							</Left>
-							<Right className='row'>
-								<ViikotLeft>
-								<BoxH1>Week 4</BoxH1>
-								<Boxp>Functions</Boxp>
-								</ViikotLeft>
-							</Right>
-							<Left className='row'>
-								<Viikot>
-								<BoxH1>REST WEEK</BoxH1>
-								</Viikot>
-							</Left>
-							<Right className='row'>
-								<ViikotLeft>
-								<BoxH1>Week 5</BoxH1>
-								<Boxp>Control Structures</Boxp>
-								</ViikotLeft>
-							</Right>
-							<Left className='row'>
-								<Viikot>
-								<BoxH1>Week 6</BoxH1>
-								<Boxp>Beauty Of Code</Boxp>
-								</Viikot>
-							</Left>
-							<Right className='row'>
-								<ViikotLeft>
-								<BoxH1>Week 7</BoxH1>
-								<Boxp>File Handling and Databases</Boxp>
-								</ViikotLeft>
-							</Right>
-							<Left className='row'>
-								<Viikot>
-								<BoxH1>Week 8</BoxH1>
-								<Boxp>Recap and Test!</Boxp>
-								</Viikot>
-							</Left>
-							<div style={{display: "flex", position: "absolute", width: "99%", height: '2100px', justifyContent: "center"}}>
-							<TreeImage src='Tree.png' height='2033px' />
-							</div>
-						</Structure>
-					</Box>
-				</div>
-			</TreeContainer>
+			<BodyContainer>
+				<TreeContainer className='container-fluid'>
+					<div className='row' style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+						<Box className='container-fluid'>
+							<Structure>
+								<Left className='row'>
+									<Viikot>
+										<BoxH1>Week 1</BoxH1>
+										<Boxp>Syntax, Variables and Datatypes</Boxp>
+									</Viikot>
+								</Left>
+								<Right className='row'>
+									<ViikotLeft>
+										<BoxH1>Week 2</BoxH1>
+										<Boxp>More variables, Operators, Strings</Boxp>
+									</ViikotLeft>
+								</Right>
+								<Left className='row'>
+									<Viikot>
+										<BoxH1>Week 3</BoxH1>
+										<Boxp>Conditionals, Loops, Try {"&"} Except</Boxp>
+									</Viikot>
+								</Left>
+								<Right className='row'>
+									<ViikotLeft>
+										<BoxH1>Week 4</BoxH1>
+										<Boxp>Dictionaries, Tuples, Sets</Boxp>
+									</ViikotLeft>
+								</Right>
+								<Left className='row'>
+									<Viikot>
+										<Boxp>REST WEEK</Boxp>
+									</Viikot>
+								</Left>
+								<Right className='row'>
+									<ViikotLeft>
+										<BoxH1>Week 5</BoxH1>
+										<Boxp>Functions</Boxp>
+									</ViikotLeft>
+								</Right>
+								<Left className='row'>
+									<Viikot>
+										<BoxH1>Week 6</BoxH1>
+										<Boxp>File Handling and Further Learning</Boxp>
+									</Viikot>
+								</Left>
+								<Right className='row'>
+									<ViikotLeft>
+										<BoxH1>Week 7</BoxH1>
+										<Boxp>Recap</Boxp>
+									</ViikotLeft>
+								</Right>
+								<Left className='row'>
+									<Viikot>
+										<BoxH1>Week 8</BoxH1>
+										<Boxp>Test and certifications!</Boxp>
+									</Viikot>
+								</Left>
+								{/* Need to update graphic to a node removed in the tree*/}
+								<div style={{ display: "flex", position: "absolute", width: "99%", height: '2100px', justifyContent: "center" }}>
+									<TreeImage src='Tree.png' height='2033px' />
+								</div>
+							</Structure>
+						</Box>
+					</div>
+				</TreeContainer>
+				<Button variant="success" size="lg" href="https://forms.gle/AMXLsfjWME1Ym8JA7" target="_blank">Register now!</Button>{' '}
+			</BodyContainer>
+
 		</>
 	);
 }

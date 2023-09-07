@@ -12,6 +12,7 @@ const StyledBurger = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
     z-index: 11;
+    cursor: pointer;
 
     div {
         width: 2rem;
@@ -27,7 +28,7 @@ const StyledBurger = styled.div`
 
         &:nth-child(2) {
             transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-            opacity: ${({open}) => open ? 0 : 1};
+            opacity: ${({ open }) => open ? 0 : 1};
         }
 
         &:nth-child(3) {
@@ -46,7 +47,7 @@ function Burger() {
                 <div />
                 <div />
             </StyledBurger>
-            <RightNavbar open={open}/>
+            <RightNavbar open={open} />
         </>
     )
 }

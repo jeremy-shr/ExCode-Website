@@ -30,10 +30,17 @@
 	color: #61dafb;
 }
 
+a:hover {
+	color: #282c34;
+}
+
+;
+
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
 	}
+
 	to {
 		transform: rotate(360deg);
 	}
@@ -45,18 +52,19 @@
 	border-radius: 50px !important;
 }
 
+
+
 .program-button:hover {
 	color: #468845 !important;
 	border-color: #468845 !important;
 	background-color: #fff !important;
 }
+
 .faq-button {
 	padding: 0.5rem 3rem !important;
 	font-size: 1.25rem;
 	border-radius: 3rem !important;
 	float: right;
-	margin-right: 20%;
-	margin-top: -80px;
 }
 
 .title-block {
@@ -73,7 +81,17 @@
 }
 
 .footLink:hover {
-	color: #62b22f;
+	color: #468845 !important;
+}
+
+.socialBtn {
+	color: #282c34;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.socialBtn :hover {
+	color: #468845
 }
 
 .imgStyling {
@@ -91,20 +109,21 @@
 	align-items: center;
 }
 
-.rightNavbarflex h3{
+.rightNavbarflex h3 {
 	padding-top: 7%;
 	font-size: 3vw;
 	display: none;
 }
 
 @media screen and (max-width: 1150px) {
-	.faq-button{
+	.faq-button {
 		float: none;
 		margin-top: 0;
-		margin-left: 25%;
-		margin-right: 25%;
-
 	}
-  }
+}
 
-
+@media screen and (max-width: 400px) {
+	.footLink {
+		display: none;
+	}
+}
