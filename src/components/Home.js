@@ -205,7 +205,7 @@ function Home() {
 						<Paragraph>
 							ExCode is an 8-week coding bootcamp run
 							entirely by students at the University of Exeter. It
-							is taught every Tuesday at 18:30 in the Forum
+							is taught every Tuesday at 19:00 in the Forum
 							Auditorium, by a lead professor and a team of the
 							best teaching assistants on campus. Each session is
 							composed of a half hour lecture then an hour long workshop

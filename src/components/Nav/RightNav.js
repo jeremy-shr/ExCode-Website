@@ -58,31 +58,31 @@ const Ul = styled.ul`
 `
 
 function RightNavbar({ open }) {
-    const isOpen = true;
 
     return (
         <Ul open={open}>
             <div className="rightNavbarflex">
+
                 <h3>&lt;</h3>
-                <NavLink
-                    to={'/'} onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+                <a
+                    href={'/'} onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                     <span>Home </span>
-                </NavLink>
+                </a>
                 <h3>&gt;</h3>
             </div>
-            <NavLink
-                to="/about" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            <a
+                href="/about" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> About Us </span>
-            </NavLink>
-            <NavLink
-                to="/program" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
-                <span> Program </span>
-            </NavLink>
+            </a>
+            <a
+                href="/program" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+                <span> Programme </span>
+            </a>
 
-            <NavLink
-                to="/faq" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            <a
+                href="/faq" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> FAQ </span>
-            </NavLink>
+            </a>
             <SocialsCont>
                 <NavLink target="_blank" to="https://www.instagram.com/exeter_entrepreneurs/" className="socialBtn"><BsInstagram /></NavLink>
                 <NavLink target="_blank" to="https://www.linkedin.com/company/exeter-entrepreneurs-society/?viewAsMember=true" className="socialBtn"><BsLinkedin /></NavLink>

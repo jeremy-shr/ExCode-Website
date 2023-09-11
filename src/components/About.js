@@ -81,6 +81,7 @@ const GreenBox = styled.div`
 	width: 520px;
 	border-radius: 5px;
 	max-width: 100vw;
+	margin-bottom: 30px;
 
 	
 	h3 {

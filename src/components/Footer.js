@@ -51,7 +51,7 @@ function Footer() {
           </NavLink>
           <NavLink className="footLink" to="/">Home</NavLink>
           <NavLink className="footLink" to="/about">About Us</NavLink>
-          <NavLink className="footLink" to="/program">Program</NavLink>
+          <NavLink className="footLink" to="/program">Programme</NavLink>
 
           <NavLink target="_blank" to="https://www.instagram.com/exeter_entrepreneurs/" className="socialBtn"><BsInstagram /></NavLink>
           <NavLink target="_blank" to="https://www.linkedin.com/company/exeter-entrepreneurs-society/?viewAsMember=true" className="socialBtn"><BsLinkedin /></NavLink>

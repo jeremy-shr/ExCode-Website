@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# ExCode Website (2023-24 Version)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I took on this codebase from predecessors in my role as Head of Tech for Exeter Entrepreneurs. The website was outdated and lacked functionality that we (the society's commitee) needed as we wanted to use the website for marketing and registrations to the programme.  
 
-## Available Scripts
+My job involved redesigning certain aspects of the website for our purposes, upgrading functionality and supporting responsiveness as most traffic will be on mobile. During the development, I was in contact with the Head of Marketing to make sure I was designing a product that fitted the programme's marketing needs.  
 
-In the project directory, you can run:
+Visit the website now: excode.co.uk  
 
-### `npm start`
+## Tech stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project uses: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+JS with React, Styled Components, React Bootstrap, Firebase for hosting and other minor style libraries.  
 
-### `npm test`
+## About ExCode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ExCode is a programme hosted every year by Exeter Entrepreneurs Society that allows any student of Exeter University to learn code in an engaging and supportive environment. It consists of a half hour lecture by the Head of Tech and then an hour long workshop with smaller groups. 
 
-### `npm run build`
+Attendance is usually of 400 in-person (filling the University's largest auditorium). And around 100 more online from a seperate campus and if there wasn't enough room in person for everyone who registered. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ExCode is open to all and is constantly evolving to respond to the feedback of students who have gone through the programme.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Challenges
+A few of the technologies used in this project previously were new to me./ This meant I was in the dark regarding some aspects of it. However, this meant I could learn by trying and failing on a project with real application and importance. This is always an effective way to learn and I'm grateful that my first task as Head of Tech has taught me so much.  
 
-### `npm run eject`
+There was also a lack of any responsiveness for mobile devices across the website's pages. As we would have people scanning a QR code to access the website on their phones, this was high priority. However, inconsistent methods of styling mean this was a challenge.  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Suggestions for Future modification
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Use a container manager such as Docker. This is to avoid dependency issues.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Add functionality to register within the website? This could help with future admin tasks.  
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Change all information to be relevant to the most recent instance of ExCode.  

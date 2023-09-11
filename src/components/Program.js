@@ -173,19 +173,19 @@ function Program() {
 								</Right>
 								<Left className='row'>
 									<Viikot>
-										<BoxH1>Week 3</BoxH1>
-										<Boxp>Conditionals, Loops, Try {"&"} Except</Boxp>
+										<Boxp>REST WEEK</Boxp>
 									</Viikot>
 								</Left>
 								<Right className='row'>
 									<ViikotLeft>
-										<BoxH1>Week 4</BoxH1>
-										<Boxp>Dictionaries, Tuples, Sets</Boxp>
+										<BoxH1>Week 3</BoxH1>
+										<Boxp>Conditionals, Loops, Try {"&"} Except</Boxp>
 									</ViikotLeft>
 								</Right>
 								<Left className='row'>
 									<Viikot>
-										<Boxp>REST WEEK</Boxp>
+										<BoxH1>Week 4</BoxH1>
+										<Boxp>Dictionaries, Tuples, Sets</Boxp>
 									</Viikot>
 								</Left>
 								<Right className='row'>
