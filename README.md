@@ -33,4 +33,4 @@ Use a container manager such as Docker. This is to avoid dependency issues.
 
 Add functionality to register within the website? This could help with future admin tasks.  
 
-Change all information to be relevant to the most recent instance of ExCode.  
+Change all information to be relevant to the most recent instance of ExCode.

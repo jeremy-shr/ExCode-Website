@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import TypeWriter from "react-typewriter";
+import { FaArrowRight } from "react-icons/fa6";
+
 
 const Title = styled.h1`
 	max-width: 1050px;
@@ -21,6 +23,8 @@ const Title = styled.h1`
 
 const R1 = styled.section`
 	background: url("/course.png");
+	background-size: cover;
+	width: 100vw;
 	height: 100vh;
 	display: flex !important;
 	flex-direction: column;
@@ -36,6 +40,7 @@ const R2 = styled.section`
 	align-items: center;
 	justify-content: center;
 	margin: 0 0 5vw 0;
+	overflow: hidden;
 `;
 
 const R3 = styled.section`
@@ -62,7 +67,8 @@ const Buttons = styled.div`
 	margin-top: 15px;
 	display: flex;
 	justify-content: center;
-	column-gap: 20px;
+	flex-wrap: wrap;
+	gap: 20px;
 `
 
 const C1 = styled.section`
@@ -171,8 +177,27 @@ function Home() {
 	return (
 		<>
 			<R1 className="container-fluid">
-				<div className="row">
-					<div style={{ textAlign: "center" }}>
+				<div className="row" style={{ textAlign: "center", display: 'flex' }}>
+					<div style={{ textAlign: "center", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+
+						<div style={{
+							border: "2px solid #62b22f",
+							borderRadius: "30px",
+							backgroundColor: "rgba(98,178,47, 0.7)",
+							paddingLeft: "20px",
+							paddingRight: "20px",
+							paddingTop: "5px",
+							paddingBottom: "5px",
+							height: "fit-content",
+							display: "flex",
+							flexDirection: "column",
+							justifyContent: "center",
+							width: "fit-content",
+							position: "absolute",
+							top: "15vh",
+						}}>
+							<p style={{ marginBottom: "0px", color: 'white' }}>🚨 ExCode is returning in September 2025!</p>
+						</div>
 						<Title>
 							{" "}
 							The UK's {" "}
@@ -184,14 +209,31 @@ function Home() {
 							Student Run Coding Bootcamp</Title>
 						<Paragraph>
 							Learn how to code from scratch and receive a
-							certificate qualifying you in Python!
+							certificate qualifying you in Python <span style={{ fontWeight: 'bold' }}>for free!</span>
 						</Paragraph>
-						<Button variant="success" size="lg" href="https://forms.gle/AMXLsfjWME1Ym8JA7" target="_blank">Register now!</Button>{' '}
+						<Button variant="success" style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }} size="lg" href="https://app.excode.co.uk/" target="_blank">Login <FaArrowRight /></Button>{' '}
 					</div>
 				</div>
 			</R1>
 
 			<R2 className="container-fluid">
+				<div style={{
+					minWidth: "300px",
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					flexDirection: "column",
+					height: "fit-content",
+					paddingTop: "35px",
+				}}>
+					<SubTitle style={{ fontSize: "2em" }}>Supported By:</SubTitle>
+					<div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", gap: '20px', height: 'fit-content', padding: 0, marginTop: '20px' }}>
+						<img src="/uniLogo.png" alt="University" style={{ height: '100px' }} />
+						<img src="/gdscLogo.png" alt="Google" style={{ height: '60px', marginTop: '15px' }} />
+						<img src="/afLogo.png" alt="Alumni Fund" style={{ height: '100px' }} />
+					</div>
+
+				</div>
 				<div
 					className="col"
 					style={{ paddingLeft: "15vw", paddingRight: "15vw" }}
@@ -225,13 +267,17 @@ function Home() {
 						for beginners. Therefore if you have never coded and
 						want to give it a try, ExCode is the place to learn!
 					</Paragraph>
+					<Paragraph>
+						At the end of the programme, you will be awarded with a certificate which is backed by Google and the University of Exeter. This is great for employment prospects and a great addition to your CV or LinkedIn profile.
+
+						Additionally, the curriculum is based on years of experience and feedback from students, so you can be sure that you are learning the most relevant and useful skills for your future career.
+					</Paragraph>
 
 					<BracketLanding1>
 						<div>
 							<SubTitle>Who's it for?</SubTitle>
 							<Paragraph>
-								If you are a student at the University of
-								Exeter, you are welcome to apply to ExCode. No prior programming experience is
+								If you are a student from any University, you are welcome to apply to ExCode. No prior programming experience is
 								needed as the aim of the bootcamp is to foster
 								the fundamental coding skills to begin your
 								journey, and start writing your own programs! We
@@ -254,7 +300,7 @@ function Home() {
 								<Button
 									className="program-button"
 									variant="outline-success"
-									href="https://forms.gle/AMXLsfjWME1Ym8JA7"
+									href="https://forms.gle/GvFEWiH4yMVDESNr5"
 									size="lg"
 									target="none"
 								>
@@ -272,6 +318,18 @@ function Home() {
 									Programme
 								</Button>
 							</NavLink>
+							<NavLink to="https://forms.gle/CVU2Kn4HrtTB7YRT8">
+								<Button
+									className="program-button"
+									variant="outline-success"
+									href="https://forms.gle/GvFEWiH4yMVDESNr5"
+									size="lg"
+									target="none"
+									style={{ width: "fit-content", minWidth: "200px" }}
+								>
+									Apply to be a Workshop Leader
+								</Button>
+							</NavLink>
 						</Buttons>
 					</JoinBanner>
 				</R3>
@@ -285,121 +343,121 @@ function Home() {
 					<ColSm className="col-sm" style={{ maxWidth: "100vw" }}>
 						<SubParagraph> /* I've alway wanted to learn to code but I was scared to study computer science at university. ExCode gave me the confidence to learn a new skill and learn in a friendly environment where I could be supported. I still can't believe its free!*\
 						</SubParagraph>
-						<div className="row" style={{flexWrap: 'nowrap'}}>
-							<div className="col-sm-1" style={{width: '70px'}}>
-							<img src="/tilda.jpg" alt="Quoter pic"
-								style={{
-									height: 50,
-									width: 50,
-									border: 1,
-									borderRadius: 50,
-									}}/>
-</div>
-<div className="col">
-<div className="row">
-<ImgName>Tilda Tarrant</ImgName>
-</div>
-<div className="row">
-<ImgSubName>
-Bsc Biology
-</ImgSubName>
-</div>
-</div>
-</div>
-</ColSm>
-<ColSm className="col-sm" style={{maxWidth:"100vw"}}>
-<SubParagraph>
+						<div className="row" style={{ flexWrap: 'nowrap' }}>
+							<div className="col-sm-1" style={{ width: '70px' }}>
+								<img src="/tilda.jpg" alt="Quoter pic"
+									style={{
+										height: 50,
+										width: 50,
+										border: 1,
+										borderRadius: 50,
+									}} />
+							</div>
+							<div className="col">
+								<div className="row">
+									<ImgName>Tilda Tarrant</ImgName>
+								</div>
+								<div className="row">
+									<ImgSubName>
+										Bsc Biology
+									</ImgSubName>
+								</div>
+							</div>
+						</div>
+					</ColSm>
+					<ColSm className="col-sm" style={{ maxWidth: "100vw" }}>
+						<SubParagraph>
 /* Without ExCode I don't think I could've passed my machine learning modules and have achieived a First with Dean's Commendation. My Teaching Assistant Ben Chatfield was amazing, going out of his way to explain areas where I was confused and help me outside lessons.*\
 </SubParagraph>
-<div className="row" style={{flexWrap: 'nowrap'}}>
-<div className="col-sm-1" style={{width: '70px'}}>
-<img
-src="/yak.jpg"
-alt="Quoter pic"
-style={{
-height: 50,
-width: 50,
-border: 1,
-borderRadius: 50,
-}}
-/>
-</div>
-<div className="col">
-<div className="row">
-<ImgName>Jacques Krzymuski</ImgName>
-</div>
-<div className="row">
-<ImgSubName>
-Msc Finance
-</ImgSubName>
-</div>
-</div>
-</div>
-</ColSm>
-<ColSm className="col-sm" style={{maxWidth:"100vw"}}>
-<SubParagraph>
+						<div className="row" style={{ flexWrap: 'nowrap' }}>
+							<div className="col-sm-1" style={{ width: '70px' }}>
+								<img
+									src="/yak.jpg"
+									alt="Quoter pic"
+									style={{
+										height: 50,
+										width: 50,
+										border: 1,
+										borderRadius: 50,
+									}}
+								/>
+							</div>
+							<div className="col">
+								<div className="row">
+									<ImgName>Jacques Krzymuski</ImgName>
+								</div>
+								<div className="row">
+									<ImgSubName>
+										Msc Finance
+									</ImgSubName>
+								</div>
+							</div>
+						</div>
+					</ColSm>
+					<ColSm className="col-sm" style={{ maxWidth: "100vw" }}>
+						<SubParagraph>
 /* Through ExCode I was able to learn the coding skills required for my Masters progam. For any student that needs programming qualifications for job applications or graduate studies, I highly recommend this bootcamp.*\
 </SubParagraph>
-<div className="row" style={{flexWrap: 'nowrap'}}>
-<div className="col-sm-1" style={{width: '70px'}}>
-<img
-src="/jade.jpg"
-alt="Quoter pic"
-style={{
-height: 50,
-width: 50,
-border: 1,
-borderRadius: 50,
-}}
-/>
-</div>
-<div className="col">
-<div className="row">
-<ImgName>Jade Léger</ImgName>
-</div>
-<div className="row">
-<ImgSubName>
-Msc Virology
-</ImgSubName>
-</div>
-</div>
-</div>
-</ColSm>
-</div>
-</Comments>
-<R5 className="row-landing-sec5">
-<C1>
-<SubTitle2>
+						<div className="row" style={{ flexWrap: 'nowrap' }}>
+							<div className="col-sm-1" style={{ width: '70px' }}>
+								<img
+									src="/jade.jpg"
+									alt="Quoter pic"
+									style={{
+										height: 50,
+										width: 50,
+										border: 1,
+										borderRadius: 50,
+									}}
+								/>
+							</div>
+							<div className="col">
+								<div className="row">
+									<ImgName>Jade Léger</ImgName>
+								</div>
+								<div className="row">
+									<ImgSubName>
+										Msc Virology
+									</ImgSubName>
+								</div>
+							</div>
+						</div>
+					</ColSm>
+				</div>
+			</Comments>
+			<R5 className="row-landing-sec5">
+				<C1>
+					<SubTitle2>
 
-<span style={{ color: "#62b22f" }}>
-Have any questions?
-</span>
-</SubTitle2>
-<p
-style={{
-fontFamily: "Raleway",
-fontWeight: 400,
-fontSize: "1.2em",
-}}
->
-Visit the FAQ and learn more about our bootcamp!
-</p>
-</C1>
+						<span style={{ color: "#62b22f" }}>
+							Have any questions?
+						</span>
+					</SubTitle2>
+					<p
+						style={{
+							fontFamily: "Raleway",
+							fontWeight: 400,
+							fontSize: "1.2em",
+						}}
+					>
+						Visit the FAQ and learn more about our bootcamp!
+					</p>
+				</C1>
 
 
-<NavLink to="/faq" style={{width:"20",cursor:"default"}}>
-<Button
-className="faq-button mt-2"
-variant="outline-success"
-href="/faq"
-size="lg"
->
-FAQ
-</Button>
-</NavLink>
-</R5>
-</>
-);
+				<NavLink to="/faq" style={{ width: "20", cursor: "default" }}>
+					<Button
+						className="faq-button mt-2"
+						variant="outline-success"
+						href="/faq"
+						size="lg"
+					>
+						FAQ
+					</Button>
+				</NavLink>
+			</R5>
+		</>
+	);
 }
 
 export default Home;

@@ -7,8 +7,6 @@ const Section = styled.section`
  padding:20px !important;
   border-top: 1px solid #62b22f !important;
   border-top-width: 50px;
-
-
 `;
 
 const R1 = styled.section`
@@ -53,16 +51,14 @@ function Footer() {
           <NavLink className="footLink" to="/about">About Us</NavLink>
           <NavLink className="footLink" to="/program">Programme</NavLink>
 
-          <NavLink target="_blank" to="https://www.instagram.com/exeter_entrepreneurs/" className="socialBtn"><BsInstagram /></NavLink>
-          <NavLink target="_blank" to="https://www.linkedin.com/company/exeter-entrepreneurs-society/?viewAsMember=true" className="socialBtn"><BsLinkedin /></NavLink>
-          <NavLink target="_blank" to="https://www.facebook.com/ExeterEntrepreneurs/" className="socialBtn"><BsFacebook /></NavLink>
+          <NavLink target="_blank" to="https://www.instagram.com/excode_exeter/" className="socialBtn"><BsInstagram /></NavLink>
+          <NavLink target="_blank" to="https://www.linkedin.com/company/google-developer-student-club-exeter/" className="socialBtn"><BsLinkedin /></NavLink>
+          <NavLink target="_blank" to="https://linktr.ee/gdscexeter" className="socialBtn"><BsLink /></NavLink>
         </C1>
 
         <C2 className="col-md-4">
-          Exeter Entrepreneurs Community Project   &copy; {new Date().getFullYear()}
+          Google Developer Student Club - University of Exeter   &copy; {new Date().getFullYear()}
         </C2>
-
-
       </R1>
 
 

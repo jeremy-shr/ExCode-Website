@@ -64,30 +64,33 @@ function RightNavbar({ open }) {
             <div className="rightNavbarflex">
 
                 <h3>&lt;</h3>
-                <a
-                    href={'/'} onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+                <NavLink
+                    to={'/'} onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                     <span>Home </span>
-                </a>
+                </NavLink>
                 <h3>&gt;</h3>
             </div>
-            <a
-                href="/about" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            <NavLink
+                to="/about" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> About Us </span>
-            </a>
-            <a
-                href="/program" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            </NavLink>
+            <NavLink
+                to="/program" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> Programme </span>
-            </a>
+            </NavLink>
 
-            <a
-                href="/faq" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            <NavLink
+                to="/faq" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span> FAQ </span>
-            </a>
+            </NavLink>
+            <NavLink
+                to="https://forms.gle/GvFEWiH4yMVDESNr5" target="_none" onClick={<Burger open={!open} />} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+                <span> Register </span>
+            </NavLink>
             <SocialsCont>
-                <NavLink target="_blank" to="https://www.instagram.com/exeter_entrepreneurs/" className="socialBtn"><BsInstagram /></NavLink>
-                <NavLink target="_blank" to="https://www.linkedin.com/company/exeter-entrepreneurs-society/?viewAsMember=true" className="socialBtn"><BsLinkedin /></NavLink>
-                <NavLink target="_blank" to="https://www.facebook.com/ExeterEntrepreneurs/" className="socialBtn"><BsFacebook /></NavLink>
-                <NavLink target="_blank" to="https://linktr.ee/exeterentrepreneurs" className="socialBtn"><BsLink /></NavLink>
+                <NavLink target="_blank" to="https://www.instagram.com/excode_exeter/" className="socialBtn"><BsInstagram /></NavLink>
+                <NavLink target="_blank" to="https://www.linkedin.com/company/google-developer-student-club-exeter/" className="socialBtn"><BsLinkedin /></NavLink>
+                <NavLink target="_blank" to="https://linktr.ee/gdscexeter" className="socialBtn"><BsLink /></NavLink>
             </SocialsCont>
         </Ul>
     )

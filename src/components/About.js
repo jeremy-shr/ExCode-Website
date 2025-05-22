@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import "./AboutUs.css";
+import { Route, Link, Routes, useLocation } from 'react-router-dom';
 
 const Title = styled.h1`
 	font-family: "Ubuntu", sans-serif;
@@ -133,33 +134,24 @@ function About() {
 							/>
 							<Title style={{ marginBottom: "15px" }}>Mission</Title>
 							<p style={{ width: "500" }}>
-								Initially founded in 2016, as an after-school coding
-								workshop, ExCode’s growth has been unprecedented,
-								with the vision to be able to give any university
-								student access to the resources and teaching needed
-								to be able to learn to code.
+								<span style={{
+									color: "#62b22f",
+									fontWeight: "bold",
+									fontSize: "1.2em"
+								}}>Hey there!</span> We're ExCode—the UK's leading student-run coding bootcamp, and we're all about making coding fun and accessible. What began in 2016 as an after-school coding workshop has exploded into a vibrant community where university students come together to learn, code, and support each other.
+
 							</p>
 
 							<p style={{ width: "500" }}>
-								The potential was clear so through the Exeter
-								Entrepreneurs community backing, rising popularity
-								and belief in the project, ExCode is now recognised
-								as the leading student-run coding bootcamp in the
-								UK.
+								Our mission is straightforward: empower every student to explore the world of programming without financial barriers. That's why our Python bootcamp is completely FREE, ensuring that passion and curiosity are all you need to join us.
 							</p>
 
 							<p style={{ width: "500" }}>
-								We are fully aware that the majority of coding
-								bootcamps and computer-science degree programs come
-								with massive financial paywalls, therefore we are
-								committed to being completely FREE to ensure anyone
-								can enroll in our bootcamp. This is thanks to our
-								many sponsors who continue to support the programs
-								and believe in our mission.
+								We choose Python for its beginner-friendly syntax and remarkable versatility—you can build anything from simple applications to the backbone of a website. By the end of the program, you'll have developed essential coding skills and earned a certificate from the Society to highlight on your CV or LinkedIn.
 							</p>
 
 							<p style={{ width: "500" }}>
-								Currently led by our Head of Tech, Jeremy Shorter, and a cohort of highly skilled workshop leaders, ExCode delivers an accessible and essential introduction to Python. We are backed by the University of Exeter to help foster core programming concepts across all the academic colleges.
+								Whether you're from Exeter or any other university, if you've ever thought about giving coding a shot, ExCode is the place to be. Ready to join us and kickstart your coding adventure?
 							</p>
 						</div>
 					</TitleContain>

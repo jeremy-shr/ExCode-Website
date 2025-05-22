@@ -52,10 +52,9 @@ function Navbar() {
                         <img src="/excode.png" alt="logo" width="130" />
                     </div>
                 </NavLink>
-                <NavLink target="_blank" to="https://www.instagram.com/exeter_entrepreneurs/" className="socialBtn"><BsInstagram /></NavLink>
-                <NavLink target="_blank" to="https://www.linkedin.com/company/exeter-entrepreneurs-society/?viewAsMember=true" className="socialBtn"><BsLinkedin /></NavLink>
-                <NavLink target="_blank" to="https://www.facebook.com/ExeterEntrepreneurs/" className="socialBtn"><BsFacebook /></NavLink>
-                <NavLink target="_blank" to="https://linktr.ee/exeterentrepreneurs" className="socialBtn"><BsLink /></NavLink>
+                <NavLink target="_blank" to="https://www.instagram.com/excode_exeter/" className="socialBtn"><BsInstagram /></NavLink>
+                <NavLink target="_blank" to="https://www.linkedin.com/company/google-developer-student-club-exeter/" className="socialBtn"><BsLinkedin /></NavLink>
+                <NavLink target="_blank" to="https://linktr.ee/gdscexeter" className="socialBtn"><BsLink /></NavLink>
             </FirstContainer>
             <Burger />
         </Nav>
